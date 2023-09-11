@@ -1,5 +1,5 @@
 {
-  "name": "ClipMemo-101",
+  "name": "clipmemo-101",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -39,5 +39,13 @@
   },
   "engines": {
     "node": ">=16.14"
-  }
+  },
+  "description": "```bash\r npm install\r ```",
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
