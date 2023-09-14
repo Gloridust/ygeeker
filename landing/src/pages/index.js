@@ -33,9 +33,13 @@ export default function Home() {
 		<body>
 			<nav>
 				<div>
-          <div className="leading">asdfasdf</div>
-          <div className="options">fasfdfasf</div>
-        </div>
+					<div className="leading">ClipMemo</div>
+					<div className="options">
+						<a href="#" >Product</a>
+						<a href="#" >Product</a>
+						<a href="#" >Podcast</a>
+					</div>
+				</div>
 			</nav>
 			<br />
 			<br />

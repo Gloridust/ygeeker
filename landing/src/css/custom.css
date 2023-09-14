@@ -31,7 +31,7 @@
 
 nav {
 	position: fixed;
-  padding: 20px 0;
+	padding: 20px 0;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -42,13 +42,19 @@ nav {
 	/* background: blue; */
 }
 
-nav > div {
+nav>div {
 	max-width: 1200px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
 	min-width: 900px;
 	background: white;
-  border-radius: 12px;
-  box-shadow: #686262 1px 1px 4px 1px;
+	border-radius: 12px;
+	box-shadow: #686262 1px 1px 4px 1px;
+	align-items: center; /* 水平居中 */
 }
+
+.options a {
+	margin-right: 20px; /* 设置适当的右侧间距 */
+  }
+  
