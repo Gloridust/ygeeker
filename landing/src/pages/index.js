@@ -15,12 +15,12 @@ function HomepageHeader() {
 				<h1 className="hero__title">{siteConfig.title}</h1>
 				<p className="hero__subtitle">{siteConfig.tagline}</p>
 				<div className={styles.buttons}>
-					<Link
+					{/* <Link
 						className="button button--secondary button--lg"
 						to="/docs/intro"
 					>
 						Docusaurus Tutorial - 5min ⏱️
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 		</header>
@@ -33,10 +33,10 @@ export default function Home() {
 		<body>
 			<nav>
 				<div>
-					<div className="leading">ClipMemo</div>
+					<div className="leading">Yungeeker</div>
 					<div className="options">
 						<a href="#" >Product</a>
-						<a href="#" >Product</a>
+						<a href="#" >Join us</a>
 						<a href="#" >Podcast</a>
 					</div>
 				</div>

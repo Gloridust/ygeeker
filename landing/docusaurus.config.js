@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "ClipMemo",
-	tagline: "Save & Learn from Any Media",
+	title: "Yungeeker",
+	tagline: "BECAUSE WE ARE YUNGEEKER",
 	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
