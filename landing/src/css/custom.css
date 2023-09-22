@@ -31,6 +31,10 @@
 	/* --ifm-hero-text-color: #717070 */
 }
 
+body {
+	background-color: #EEE9E9;
+}
+
 nav {
 	position: fixed;
 	padding: 20px 0;
@@ -42,7 +46,8 @@ nav {
 	display: flex;
 	justify-content: center;
 	/* background: blue; */
-	background-color: #EEE9E9;
+	background-color: rgba(0, 0, 0, 0);
+	width: 100%;
 }
 
 nav>div {
