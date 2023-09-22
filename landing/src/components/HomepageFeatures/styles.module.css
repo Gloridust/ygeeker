@@ -1,11 +1,21 @@
+/* 定义具有以下样式属性的容器类 */
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  display: flex;        /* 使用弹性布局 */
+  align-items: center;  /* 垂直居中内部元素 */
+  padding: 2rem 0;      /* 上下内边距为2rem，左右内边距为0 */
+  width: 100%;          /* 宽度充满父容器 */
 }
 
+/* 定义具有以下样式属性的SVG图像类 */
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 200px;        /* 设置高度为200像素 */
+  width: 200px;         /* 设置宽度为200像素 */
+}
+
+/* container {
+  width: 100%;
+} */
+
+"col col--4" {
+  width: 100%;
 }

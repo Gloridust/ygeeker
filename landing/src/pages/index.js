@@ -43,7 +43,6 @@ export default function Home() {
 			</nav>
 			<br />
 			<br />
-			<br />
 			<section>
 				<HomepageHeader />
 				<main>
