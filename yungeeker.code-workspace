@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "Landing",
+			"path": "landing"
+		},
+		{
+			"name": "Official",
+			"path": "official"
+		},
+		{
+			"name": "project-root",
+			"path": "."
+		}
+	]
+}
