@@ -1,18 +1,21 @@
 {
-    "index": {
-      "title": "Yungeeker",
-      "type": "page"
-    },
-    "support": {
-      "title": "Support",
-      "type": "page"
-    },
-    "join": {
-      "title": "Join Us",
-      "type": "page"
-    },
-    "about": {
-      "title": "About",
-      "type": "page"
-    }
-  }
+	"index": {
+		"title": "Yungeeker",
+		"type": "page",
+		"theme": {
+			"layout": "raw"
+		}
+	},
+	"support": {
+		"title": "Support",
+		"type": "page"
+	},
+	"join": {
+		"title": "Join Us",
+		"type": "page"
+	},
+	"about": {
+		"title": "About",
+		"type": "page"
+	}
+}
