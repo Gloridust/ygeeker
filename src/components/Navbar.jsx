@@ -10,8 +10,8 @@ export default function Navbar({ children }) {
 					</Link>
 				</div>
 				<div className="">
-					<Link className="mr-2" href="/support">asdfasfd</Link>
-					<Link href="/support">Join</Link>
+					<Link className="mr-2" href="/support">Support</Link>
+					<Link href="/join">Join</Link>
 				</div>
 			</div>
 		</div>
