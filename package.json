@@ -1,7 +1,7 @@
 {
 	"name": "yungeeker-official-site",
 	"version": "0.0.0",
-	"description": "Nextra docs template",
+	"description": "Yungeeker official website",
 	"scripts": {
 		"prepare": "simple-git-hooks",
 		"dev": "next dev",
