@@ -14,3 +14,4 @@ out
 .env
 
 public/rss/feed.xml
+yarn-error.log
