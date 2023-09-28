@@ -7,7 +7,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"format": "prettier --write \"**/*.{js,ts,tsx,css,md,mdx}\""
+		"format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,md,mdx}\""
 	},
 	"repository": {
 		"type": "git",
@@ -36,7 +36,7 @@
 		"typescript": "^4.9.3"
 	},
 	"lint-staged": {
-		"*.{js,ts,tsx,css,md,mdx}": [
+		"*.{js,ts,jsx,tsx,css,md,mdx}": [
 			"prettier --write"
 		]
 	},
