@@ -572,11 +572,6 @@ video {
 	z-index: 10;
 }
 
-.mx-1 {
-	margin-left: 0.25rem;
-	margin-right: 0.25rem;
-}
-
 .mr-2 {
 	margin-right: 0.5rem;
 }
@@ -585,20 +580,32 @@ video {
 	display: flex;
 }
 
-.h-\[60px\] {
-	height: 60px;
+.h-\[56px\] {
+	height: 56px;
 }
 
 .h-\[70vh\] {
 	height: 70vh;
 }
 
-.min-w-\[900px\] {
-	min-width: 900px;
+.h-\[53px\] {
+	height: 53px;
 }
 
-.min-w-\[996px\] {
-	min-width: 996px;
+.min-w-\[796px\] {
+	min-width: 796px;
+}
+
+.min-w-\[896px\] {
+	min-width: 896px;
+}
+
+.min-w-\[976px\] {
+	min-width: 976px;
+}
+
+.max-w-\[976px\] {
+	max-width: 976px;
 }
 
 .items-center {
@@ -613,12 +620,9 @@ video {
 	justify-content: space-between;
 }
 
-.gap-1 {
-	gap: 0.25rem;
-}
-
-.rounded-lg {
-	border-radius: 0.5rem;
+.bg-blue-500 {
+	--tw-bg-opacity: 1;
+	background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -626,33 +630,8 @@ video {
 	background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-blue-500 {
-	--tw-bg-opacity: 1;
-	background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .p-4 {
 	padding: 1rem;
-}
-
-.px-1 {
-	padding-left: 0.25rem;
-	padding-right: 0.25rem;
-}
-
-.py-1 {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
-}
-
-.px-4 {
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-.px-2 {
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
 }
 
 .px-8 {
@@ -660,12 +639,9 @@ video {
 	padding-right: 2rem;
 }
 
-.pr-1 {
-	padding-right: 0.25rem;
-}
-
-.align-middle {
-	vertical-align: middle;
+.py-1 {
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
 }
 
 .text-white {
@@ -680,15 +656,6 @@ video {
 		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-lg {
-	--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-		0 4px 6px -4px rgb(0 0 0 / 0.1);
-	--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
-		0 4px 6px -4px var(--tw-shadow-color);
-	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 body {
-	background-color: #eee9e9;
+	background-color: #f4f4f4;
 }

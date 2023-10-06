@@ -7,10 +7,7 @@ export default function Layout({ children }: NextraThemeLayoutProps) {
 	return (
 		<>
 			<Navbar />
-			<div>
-				<h1>My Theme</h1>
-				<div style={{ border: "1px solid" }}>{children}</div>
-			</div>
+			<main className="pt-[56px]">{children}</main>
 		</>
 	);
 }

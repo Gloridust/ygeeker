@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Navbar({}) {
 	return (
-		<div className="fixed left-0 right-0 top-0 z-10 flex h-[60px] justify-center py-1">
-			<div className="flex min-w-[996px] items-center justify-between rounded-lg bg-white px-8 py-1 shadow-lg">
+		<div className="fixed left-0 right-0 top-0 z-10 flex h-[53px] justify-center bg-white shadow-sm">
+			<div className="flex min-w-[976px] items-center justify-between px-8">
 				<div>
 					<Link href="/">
 						<img width={36} src="./logo.svg"></img>
