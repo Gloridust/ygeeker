@@ -1,7 +1,7 @@
 {
-	"name": "yungeeker-official-site",
-	"version": "0.0.0",
-	"description": "Yungeeker official website",
+	"name": "ygeeker-official-site",
+	"version": "1.0.0",
+	"description": "YGeeker official website",
 	"scripts": {
 		"prepare": "simple-git-hooks",
 		"dev": "next dev",
@@ -11,9 +11,8 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/shuding/nextra-docs-template.git"
+		"url": "git+https://github.com/ygeeker/ygeeker.git"
 	},
-	"author": "Gloridust <Gloridust@gmail.com>",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/shuding/nextra-docs-template/issues"
