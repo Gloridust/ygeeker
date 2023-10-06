@@ -580,24 +580,12 @@ video {
 	display: flex;
 }
 
-.h-\[56px\] {
-	height: 56px;
-}
-
-.h-\[70vh\] {
-	height: 70vh;
-}
-
 .h-\[53px\] {
 	height: 53px;
 }
 
-.min-w-\[796px\] {
-	min-width: 796px;
-}
-
-.min-w-\[896px\] {
-	min-width: 896px;
+.h-\[70vh\] {
+	height: 70vh;
 }
 
 .min-w-\[976px\] {
@@ -637,11 +625,6 @@ video {
 .px-8 {
 	padding-left: 2rem;
 	padding-right: 2rem;
-}
-
-.py-1 {
-	padding-top: 0.25rem;
-	padding-bottom: 0.25rem;
 }
 
 .text-white {
