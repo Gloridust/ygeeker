@@ -19,17 +19,8 @@ function Layout({ pageOpts, children }) {
 				<title>{pageOpts.title}</title>
 			</Head>
 			<div>
-				<Navbar />
+				<Navbar pageMap={pageOpts.pageMap} />
 				<main>
-					<aside>
-						<h3>Navigation</h3>
-						<div>
-							<Link href="/">Home</Link>
-						</div>
-						<div>
-							<Link href="/docs/v19/globals">Globals</Link>
-						</div>
-					</aside>
 					<article>
 						<MDXProvider components={{}}>{children}</MDXProvider>
 					</article>

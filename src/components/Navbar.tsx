@@ -1,7 +1,7 @@
 import { Link } from "nextra-theme-docs";
 import React from "react";
 
-export default function Navbar({}) {
+export default function Navbar({ pageMap }) {
 	return (
 		<div className="fixed left-0 right-0 top-0 z-10 flex h-[53px] justify-center bg-white shadow-sm">
 			<div className="flex min-w-[976px] items-center justify-between px-8">
@@ -11,10 +11,26 @@ export default function Navbar({}) {
 					</Link>
 				</div>
 				<div className="">
-					<Link className="mr-2" href="/support">
+					{pageMap.map((item) => {
+						if (item.kind === "MdxPage" && item.route != "/") {
+							return (
+								<Link
+									className="px-4 text-slate-500 hover:text-black"
+									key={item.name}
+									href={item.route}
+								>
+									{item.frontMatter.routeName}
+								</Link>
+							);
+						}
+						return null;
+					})}
+					<Link
+						className="px-4 text-slate-500 hover:text-black"
+						href="/support"
+					>
 						Support
 					</Link>
-					<Link href="/support">Join</Link>
 				</div>
 			</div>
 		</div>
