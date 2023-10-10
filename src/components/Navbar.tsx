@@ -2,6 +2,7 @@ import { Link } from "nextra-theme-docs";
 import React from "react";
 
 export default function Navbar({ pageMap }) {
+	console.log(pageMap);
 	return (
 		<div className="fixed left-0 right-0 top-0 z-10 flex h-[53px] justify-center bg-white shadow-sm">
 			<div className="flex min-w-[976px] items-center justify-between px-8">
