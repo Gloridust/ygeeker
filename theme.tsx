@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
+import ChapterTree from "./src/components/FolderTree";
 import Footer from "./src/components/Footer";
 import Navbar from "./src/components/Navbar";
 
@@ -22,16 +23,26 @@ function Layout({ pageOpts, children }) {
 				</Head>
 				<div>
 					<Navbar pageMap={pageOpts.pageMap} />
-					<main className="flex min-h-full justify-center pt-14">
-						<aside>Aside</aside>
-						<article className="max-w-[900px]">
+					<main className="flex min-h-full justify-center pt-[120px]">
+						<aside className="w-48">
+							<ChapterTree
+								pageMap={pageOpts.pageMap[5].children}
+							/>
+						</aside>
+						<article className="max-w-[900px] bg-white px-6 py-6 md:rounded-3xl">
 							<MDXProvider
 								components={{
 									h1: (props) => (
-										<h1 className="font-bold" {...props} />
+										<h1
+											className="py-4 text-[2em] font-bold"
+											{...props}
+										/>
 									),
 									h2: (props) => (
-										<h2 className="font-bold" {...props} />
+										<h2
+											className="py-2 text-[1.4em] font-bold"
+											{...props}
+										/>
 									),
 									p: (props) => (
 										<p
