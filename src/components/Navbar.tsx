@@ -8,7 +8,7 @@ export default function Navbar({ pageMap }) {
 			<div className="flex min-w-[976px] items-center justify-between px-8">
 				<div>
 					<Link href="/">
-						<img width={36} src="./logo.svg"></img>
+						<img width={36} src="/logo.svg"></img>
 					</Link>
 				</div>
 				<div className="">

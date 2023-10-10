@@ -23,10 +23,12 @@ function Layout({ pageOpts, children }) {
 				</Head>
 				<div>
 					<Navbar pageMap={pageOpts.pageMap} />
-					<main className="flex min-h-full justify-center pt-[120px]">
-						<aside className="w-48">
+					<main className="flex min-h-full justify-center pt-[100px]">
+						<aside className="w-[200px]">
 							<ChapterTree
-								pageMap={pageOpts.pageMap[5].children}
+								pageMap={
+									pageOpts.pageMap[5].children[2].children
+								}
 							/>
 						</aside>
 						<article className="max-w-[900px] bg-white px-6 py-6 md:rounded-3xl">
