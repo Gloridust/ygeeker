@@ -1,4 +1,5 @@
 ---
+title: Importing Videos from YouTube
 sidebar_position: 1
 ---
 

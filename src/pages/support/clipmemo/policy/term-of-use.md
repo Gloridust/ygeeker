@@ -1,3 +1,8 @@
+---
+title: Terms of Use
+sidebar_position: 3
+---
+
 # Terms of Use
 
 Last updated: 2023-09-11

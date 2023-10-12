@@ -24,7 +24,7 @@ function Layout({ pageOpts, children }) {
 				<div>
 					<Navbar pageMap={pageOpts.pageMap} />
 					<main className="flex min-h-full justify-center pt-[100px]">
-						<aside className="w-[200px]">
+						<aside className="w-[220px]">
 							<ChapterTree
 								pageMap={
 									pageOpts.pageMap[5].children[2].children

@@ -1,3 +1,8 @@
+---
+title: Privacy Policy
+sidebar_position: 3
+---
+
 # Privacy Policy
 
 Last Updated: 2023-08-21

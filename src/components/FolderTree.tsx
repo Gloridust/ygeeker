@@ -9,9 +9,17 @@ const ChapterItem = ({ item, meta }) => {
 	const { route } = useRouter();
 	const toggleOpen = () => setIsOpen(!isOpen);
 
+	console.log(item);
+
 	const active = route === item.route;
 
-	const folderTitle = meta[item.name] || item.name;
+	const folderMeta = meta[item.name] || item.name;
+
+	if (!folderMeta) {
+		return null;
+	}
+
+	const folderTitle = folderMeta.title || folderMeta || item.name;
 
 	switch (item.kind) {
 		case "Folder":
@@ -74,6 +82,39 @@ const ChapterItem = ({ item, meta }) => {
 	}
 };
 
+const deepSortPageMap = (pageMap, meta) => {
+	return [...pageMap]
+		.filter((item) => ["MdxPage", "Folder"].includes(item.kind))
+		.sort((a, b) => {
+			const metaA =
+				a.kind == "MdxPage" ? a.frontMatter : meta[a.name] || {};
+			const metaB =
+				b.kind == "MdxPage" ? b.frontMatter : meta[b.name] || {};
+
+			console.log("******", a.name, metaA);
+
+			const posA =
+				metaA.sidebar_position !== undefined
+					? metaA.sidebar_position
+					: 0;
+			const posB =
+				metaB.sidebar_position !== undefined
+					? metaB.sidebar_position
+					: 0;
+
+			return posA - posB;
+		})
+		.map((item) => {
+			if (item.kind === "Folder") {
+				return {
+					...item,
+					children: deepSortPageMap(item.children, meta),
+				};
+			}
+			return item;
+		});
+};
+
 const ChapterTree = ({ pageMap }) => {
 	const [meta, setMeta] = useState({});
 
@@ -84,9 +125,16 @@ const ChapterTree = ({ pageMap }) => {
 		}
 	}, [pageMap]);
 
+	const sortedPageMap = useMemo(
+		() => deepSortPageMap(pageMap, meta),
+		[pageMap, meta],
+	);
+
+	console.log("sorted", sortedPageMap);
+
 	return (
 		<div className="chapter-tree pr-2">
-			{pageMap.map((item, index) => (
+			{sortedPageMap.map((item, index) => (
 				<ChapterItem key={index} item={item} meta={meta} />
 			))}
 		</div>
