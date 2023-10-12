@@ -1,4 +1,5 @@
 ---
+title: Import from local files
 sidebar_position: 4
 ---
 

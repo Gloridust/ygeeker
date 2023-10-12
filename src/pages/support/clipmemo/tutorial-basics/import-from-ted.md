@@ -1,4 +1,5 @@
 ---
+title: Import TED videos
 sidebar_position: 2
 ---
 

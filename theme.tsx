@@ -31,12 +31,12 @@ function Layout({ pageOpts, children }) {
 								}
 							/>
 						</aside>
-						<article className="max-w-[900px] bg-white px-6 py-6 md:rounded-3xl">
+						<article className="bg-white px-2 py-6 md:w-[900px] md:rounded-3xl md:px-8">
 							<MDXProvider
 								components={{
 									h1: (props) => (
 										<h1
-											className="py-4 text-[2em] font-bold"
+											className="leading=[1.08349] py-4 text-[48px] font-semibold"
 											{...props}
 										/>
 									),
@@ -48,7 +48,13 @@ function Layout({ pageOpts, children }) {
 									),
 									p: (props) => (
 										<p
-											className="py-1 text-slate-700"
+											className="mt-1 leading-[1.52947] text-slate-700"
+											{...props}
+										/>
+									),
+									image: (props) => (
+										<image
+											className="mt-[0.75em]"
 											{...props}
 										/>
 									),

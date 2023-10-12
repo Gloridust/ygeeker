@@ -24,7 +24,7 @@ const ChapterItem = ({ item, meta }) => {
 	switch (item.kind) {
 		case "Folder":
 			return (
-				<div className="py-1 pl-4 text-slate-600">
+				<div className="mb-1 pl-4 text-slate-600">
 					<div
 						className="flex cursor-pointer items-center"
 						onClick={toggleOpen}
@@ -51,7 +51,7 @@ const ChapterItem = ({ item, meta }) => {
 							</svg>
 						)}
 						<span
-							className={`ml-2 ${
+							className={`ml-1 text-[.95rem] ${
 								route.includes(item.route) && "font-bold"
 							}`}
 						>
@@ -59,7 +59,7 @@ const ChapterItem = ({ item, meta }) => {
 						</span>
 					</div>
 					{isOpen && (
-						<div className="py-1 pl-2">
+						<div className="py-2 pl-2">
 							<ChapterTree pageMap={item.children} />
 						</div>
 					)}
@@ -68,7 +68,7 @@ const ChapterItem = ({ item, meta }) => {
 		case "MdxPage":
 			return (
 				<div
-					className={`mb-1 pl-8 text-slate-600 last:pb-0 last-of-type:mb-0 ${
+					className={`mb-2 pl-8 text-[.95rem] text-slate-600 last-of-type:mb-0 ${
 						active && "font-bold"
 					}`}
 				>
