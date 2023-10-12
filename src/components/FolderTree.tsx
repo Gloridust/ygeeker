@@ -1,11 +1,15 @@
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { useMemo } from "react";
 // import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 import { useState, useEffect } from "react";
 
 const ChapterItem = ({ item, meta }) => {
 	const [isOpen, setIsOpen] = useState(false);
+	const { route } = useRouter();
 	const toggleOpen = () => setIsOpen(!isOpen);
+
+	const active = route === item.route;
 
 	const folderTitle = meta[item.name] || item.name;
 
@@ -38,7 +42,13 @@ const ChapterItem = ({ item, meta }) => {
 								<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
 							</svg>
 						)}
-						<span className="ml-2">{folderTitle}</span>
+						<span
+							className={`ml-2 ${
+								route.includes(item.route) && "font-bold"
+							}`}
+						>
+							{folderTitle}
+						</span>
 					</div>
 					{isOpen && (
 						<div className="py-1 pl-2">
@@ -49,7 +59,11 @@ const ChapterItem = ({ item, meta }) => {
 			);
 		case "MdxPage":
 			return (
-				<div className="mb-1 pl-8 text-slate-600 last:pb-0 last-of-type:mb-0">
+				<div
+					className={`mb-1 pl-8 text-slate-600 last:pb-0 last-of-type:mb-0 ${
+						active && "font-bold"
+					}`}
+				>
 					<Link href={item.route}>
 						{item.frontMatter?.title || item.name}
 					</Link>
