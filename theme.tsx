@@ -23,8 +23,8 @@ function Layout({ pageOpts, children }) {
 				</Head>
 				<div>
 					<Navbar pageMap={pageOpts.pageMap} />
-					<main className="flex min-h-full justify-center pt-[100px]">
-						<aside className="w-[220px]">
+					<main className="relative flex min-h-screen justify-center pt-[100px]">
+						<aside className="sticky top-[100px] w-[220px] self-start">
 							<ChapterTree
 								pageMap={
 									pageOpts.pageMap[5].children[2].children
@@ -36,7 +36,7 @@ function Layout({ pageOpts, children }) {
 								components={{
 									h1: (props) => (
 										<h1
-											className="leading=[1.08349] py-4 text-[48px] font-semibold"
+											className="leading=[1.08349] text-[2.8235294118rem] font-semibold"
 											{...props}
 										/>
 									),
@@ -46,15 +46,39 @@ function Layout({ pageOpts, children }) {
 											{...props}
 										/>
 									),
+									h3: (props) => (
+										<h3
+											className="leading=[1.125] py-2 text-[1.8823529412em] font-bold"
+											{...props}
+										/>
+									),
 									p: (props) => (
 										<p
-											className="mt-1 leading-[1.52947] text-slate-700"
+											className="mt-1 leading-[1.52947]  text-slate-700"
 											{...props}
 										/>
 									),
 									image: (props) => (
-										<image
+										<img
 											className="mt-[0.75em]"
+											{...props}
+										/>
+									),
+									li: (props) => (
+										<li
+											className="list-inside list-disc"
+											{...props}
+										/>
+									),
+									a: (props) => (
+										<a
+											className="text-blue-600 hover:underline"
+											{...props}
+										/>
+									),
+									pre: (props) => (
+										<pre
+											className="rounded bg-gray-100 p-4"
 											{...props}
 										/>
 									),

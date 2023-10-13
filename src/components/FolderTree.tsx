@@ -9,8 +9,6 @@ const ChapterItem = ({ item, meta }) => {
 	const { route } = useRouter();
 	const toggleOpen = () => setIsOpen(!isOpen);
 
-	console.log(item);
-
 	const active = route === item.route;
 
 	const folderMeta = meta[item.name] || item.name;
