@@ -8,7 +8,10 @@
 	},
 	"support": {
 		"title": "Support",
-		"type": "page"
+		"type": "page",
+		"subheader": {
+			"enable": false
+		}
 	},
 	"join": {
 		"title": "Join Us",

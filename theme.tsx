@@ -26,10 +26,22 @@ function Layout({ pageOpts, children }) {
 						autoHide={true}
 						pageMap={pageOpts.pageMap}
 						subNavbar={
-							<div className="h-[3.0588235294rem] w-full bg-green-500"></div>
+							<div className="flex h-[3.0588235294rem] w-full justify-center border-b-2 border-b-slate-200 backdrop-blur-lg backdrop-filter">
+								<div className="flex min-w-[976px] items-center justify-between px-8">
+									<div className="text-lg">ClipMemo</div>
+									<div className="flex text-[.7058823529rem]">
+										<div className="ml-3 px-2 py-1">
+											Contact
+										</div>
+										<div className="ml-3 rounded-full bg-green-700 px-2 py-1 text-white">
+											Download
+										</div>
+									</div>
+								</div>
+							</div>
 						}
 					/>
-					<main className="relative flex min-h-screen justify-center pt-[100px]">
+					<main className="relative flex min-h-screen justify-center pt-[40px]">
 						<aside className="sticky top-[100px] w-[220px] self-start">
 							<ChapterTree
 								pageMap={

@@ -26,7 +26,9 @@ export default function Navbar({ pageMap, subNavbar, autoHide }) {
 	return (
 		<>
 			<div
-				className="fixed left-0 right-0 top-0 z-10 flex h-[48px] justify-center bg-white shadow-sm transition-all duration-300"
+				className={`fixed left-0 right-0 top-0 z-10 flex h-[48px] justify-center bg-white ${
+					!subNavbar && "shadow-sm"
+				} transition-all duration-300`}
 				style={{ top: navbarTop }}
 			>
 				<div className="flex min-w-[976px] items-center justify-between px-8">
@@ -40,7 +42,7 @@ export default function Navbar({ pageMap, subNavbar, autoHide }) {
 							if (item.kind === "MdxPage" && item.route != "/") {
 								return (
 									<Link
-										className="px-4 text-slate-500 hover:text-black"
+										className="ml-8 text-slate-500 hover:text-black"
 										key={item.name}
 										href={item.route}
 									>
@@ -51,7 +53,7 @@ export default function Navbar({ pageMap, subNavbar, autoHide }) {
 							return null;
 						})}
 						<Link
-							className="px-4 text-slate-500 hover:text-black"
+							className="ml-8 text-slate-500 hover:text-black"
 							href="/support"
 						>
 							Support
@@ -61,9 +63,7 @@ export default function Navbar({ pageMap, subNavbar, autoHide }) {
 			</div>
 
 			{subNavbar && (
-				<div className="sticky top-0 z-20 mt-[48px] bg-white shadow-sm">
-					{subNavbar}
-				</div>
+				<div className="sticky top-0 z-20 mt-[48px]">{subNavbar}</div>
 			)}
 		</>
 	);
