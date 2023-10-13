@@ -22,7 +22,13 @@ function Layout({ pageOpts, children }) {
 					<title>{pageOpts.title}</title>
 				</Head>
 				<div>
-					<Navbar pageMap={pageOpts.pageMap} />
+					<Navbar
+						autoHide={true}
+						pageMap={pageOpts.pageMap}
+						subNavbar={
+							<div className="h-[3.0588235294rem] w-full bg-green-500"></div>
+						}
+					/>
 					<main className="relative flex min-h-screen justify-center pt-[100px]">
 						<aside className="sticky top-[100px] w-[220px] self-start">
 							<ChapterTree
