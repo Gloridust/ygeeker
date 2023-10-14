@@ -12,7 +12,7 @@ function Layout({ pageOpts, children }) {
 	// pageOpts.frontMatter
 
 	// You can build the sidebar based on the structure data from `pageMap`:
-	console.log(pageOpts);
+	// console.log(pageOpts);
 
 	if (/\/support\/(.+)/.test(pageOpts.route)) {
 		return <Documention pageOpts={pageOpts}>{children}</Documention>;

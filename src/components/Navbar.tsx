@@ -1,7 +1,15 @@
 import { Link } from "nextra-theme-docs";
 import React, { useState, useEffect } from "react";
 
-export default function Navbar({ pageMap, subNavbar, autoHide }) {
+export default function Navbar({
+	pageMap,
+	subNavbar,
+	autoHide,
+}: {
+	subNavbar?: any;
+	autoHide?: boolean;
+	pageMap?: any[];
+}) {
 	const [navbarTop, setNavbarTop] = useState("0");
 	const [lastScrollTop, setLastScrollTop] = useState(0);
 
