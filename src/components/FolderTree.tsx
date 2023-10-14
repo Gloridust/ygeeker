@@ -1,3 +1,4 @@
+import useMeta from "@/utils/useMeta";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useMemo } from "react";
@@ -114,14 +115,7 @@ const deepSortPageMap = (pageMap, meta) => {
 };
 
 const ChapterTree = ({ pageMap }) => {
-	const [meta, setMeta] = useState({});
-
-	useEffect(() => {
-		const metaItem = pageMap.find((item) => item.kind === "Meta");
-		if (metaItem) {
-			setMeta(metaItem.data);
-		}
-	}, [pageMap]);
+	const meta = useMeta(pageMap);
 
 	const sortedPageMap = useMemo(
 		() => deepSortPageMap(pageMap, meta),
