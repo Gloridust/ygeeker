@@ -1,11 +1,9 @@
+import DefaultLayout from "@/components/layout/Default";
 import Documention from "@/components/layout/Documention";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-
-import Footer from "./src/components/Footer";
-import Navbar from "./src/components/Navbar";
 
 function Layout({ pageOpts, children }) {
 	// Front matter of the current page:
@@ -21,18 +19,7 @@ function Layout({ pageOpts, children }) {
 	switch (pageOpts.route) {
 		default:
 			return (
-				<>
-					<Head>
-						<title>{pageOpts.title}</title>
-					</Head>
-					<div>
-						<Navbar pageMap={pageOpts.pageMap} />
-						<main className="min-h-screen pt-[56px]">
-							<div>{children}</div>
-						</main>
-						<Footer />
-					</div>
-				</>
+				<DefaultLayout pageOpts={pageOpts}>{children}</DefaultLayout>
 			);
 	}
 }
