@@ -82,6 +82,7 @@ export default function Documention({ pageOpts, children }) {
 									/>
 								),
 								image: (props) => (
+									// @ts-ignore
 									<img className="mt-[0.75em]" {...props} />
 								),
 								li: (props) => (
