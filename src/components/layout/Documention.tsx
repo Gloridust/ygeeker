@@ -44,8 +44,8 @@ export default function Documention({ pageOpts, children }) {
 						</div>
 					}
 				/>
-				<main className="relative flex min-h-screen justify-center pt-[40px]">
-					<aside className="sticky top-[100px] w-[220px] self-start">
+				<main className="relative flex min-h-screen justify-center pt-[12px] sm:pt-[40px]">
+					<aside className="sticky top-[100px] hidden w-[220px] self-start sm:block">
 						<ChapterTree
 							pageMap={
 								documentionMap.find(
@@ -54,7 +54,7 @@ export default function Documention({ pageOpts, children }) {
 							}
 						/>
 					</aside>
-					<article className="bg-white px-2 py-6 md:w-[900px] md:rounded-3xl md:px-8">
+					<article className="bg-white px-6 py-6 sm:px-2 md:w-[900px] md:rounded-3xl md:px-8">
 						<MDXProvider
 							components={{
 								h1: (props) => (
