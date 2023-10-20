@@ -28,7 +28,7 @@ export default function Documention({ pageOpts, children }) {
 					pageMap={pageOpts.pageMap}
 					subNavbar={
 						<div className="flex h-[3.0588235294rem] w-full justify-center border-b-2 border-b-slate-200 backdrop-blur-lg backdrop-filter">
-							<div className="flex min-w-[976px] items-center justify-between px-8">
+							<div className="flex w-full items-center justify-between px-8 sm:w-fit sm:min-w-[976px]">
 								<div className="text-lg">
 									{meta?.title || "Documention"}
 								</div>
