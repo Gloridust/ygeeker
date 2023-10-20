@@ -108,26 +108,28 @@ export default function Navbar({
 						</svg>
 					</button>
 				</div>
-				{pageMap.map((item) => {
-					if (item.kind === "MdxPage" && item.route !== "/") {
-						return (
-							<Link
-								className="block px-4 py-2 text-slate-500 hover:text-black"
-								key={item.name}
-								href={item.route}
-							>
-								{item.frontMatter.routeName}
-							</Link>
-						);
-					}
-					return null;
-				})}
-				<Link
-					className="block px-4 py-2 text-slate-500 hover:text-black"
-					href="/support"
-				>
-					Support
-				</Link>
+				<div className="px-8">
+					{pageMap.map((item) => {
+						if (item.kind === "MdxPage" && item.route !== "/") {
+							return (
+								<Link
+									className="block px-4 py-2 text-slate-500 hover:text-black"
+									key={item.name}
+									href={item.route}
+								>
+									{item.frontMatter.routeName}
+								</Link>
+							);
+						}
+						return null;
+					})}
+					<Link
+						className="block px-4 py-2 text-slate-500 hover:text-black"
+						href="/support"
+					>
+						Support
+					</Link>
+				</div>
 			</div>
 
 			{subNavbar && (
