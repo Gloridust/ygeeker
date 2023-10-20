@@ -63,9 +63,9 @@ export default function Documention({ pageOpts, children }) {
 						</div>
 					}
 				/>
-				<main className="relative flex min-h-screen justify-center pt-[12px] sm:pt-[40px]">
+				<main className="relative flex min-h-screen justify-center pt-0 sm:pt-[40px]">
 					<aside
-						className={`fixed bottom-0 top-[48px] z-50 transform bg-white transition-transform duration-300 sm:sticky sm:bottom-[unset] sm:top-[100px] sm:translate-x-0 sm:bg-inherit ${
+						className={`fixed bottom-0 top-[50px] z-50 transform bg-white transition-transform duration-300 sm:sticky sm:bottom-[unset] sm:top-[100px] sm:translate-x-0 sm:bg-inherit ${
 							isDrawerOpen
 								? "translate-x-0"
 								: "-translate-x-[100vw]"
