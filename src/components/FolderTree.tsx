@@ -2,7 +2,6 @@ import useMeta from "@/utils/useMeta";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useMemo } from "react";
-// import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 import { useState, useEffect } from "react";
 
 const ChapterItem = ({ item, meta }) => {
