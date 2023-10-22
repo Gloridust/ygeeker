@@ -3,24 +3,67 @@ title: YGeeker
 routeName: Entertainment
 ---
 
-<section className="h-[70vh]">
-<br/><br/><br/>
-<div className="p-4 flex justify-center">
-	<div>
-		<h3>BECAUSE WE ARE YGEEKER</h3>
-		{/* <p>The app-specific shared secret is a unique code to receive receipts for only this app’s auto-renewable subscriptions.<br/> You may want to use an app-specific shared secret if you’re transferring this app to another developer, or if you want to keep your primary shared secret private.</p> */}
+<section className="flex justify-center">
+	<div className="mb-10 flex h-[60vh] max-w-[900px] justify-start">
+		<h1 className="mb-2 flex flex-col justify-center text-5xl font-bold leading-[0.6] text-blue-600 sm:min-w-[600px]">
+			BECAUSE
+			<br />
+			WE ARE
+			<br />
+			YGEEKER
+		</h1>
+		<div className="flex justify-center space-x-4">
+			<span className="text-blue-400">Joyful</span>
+			<span className="text-blue-400">Fun</span>
+			<span className="text-blue-400">Energy</span>
+			<span className="text-blue-400">Creative</span>
+		</div>
 	</div>
-</div>
-
 </section>
 
-<section className="flex justify-center bg-blue-500 p-4 text-white">
-	{/* <div className="max-w-[976px]">
-		<h3>Who We Are</h3>
-		The app-specific shared secret is a unique code to receive receipts for only
-		this app’s auto-renewable subscriptions.
-		<br /> You may want to use an app-specific shared secret if you’re
-		transferring this app to another developer, or if you want to keep your
-		primary shared secret private.
-	</div> */}
+<section className="mb-10 flex justify-center bg-blue-400 p-12 text-white">
+	<div className="max-w-[900px] text-center">
+		<h2 className="mb-4 text-3xl">Who we are</h2>
+		<div>
+			The app-specific shared secret is a unique code to receive receipts
+			for only this app's auto-renewable subscriptions. You may want to
+			use an app-specific shared secret if you're transferring this app to
+			another developer, or if you want to keep your primary shared secret
+			private.
+		</div>
+	</div>
+</section>
+
+<section className="flex justify-center">
+	<div className="mb-10 grid max-w-[900px] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+		{["I DIDN'T", "BALLONER", "CLIPHEMO", "OCEANION"].map(
+			(title, index) => (
+				<div key={index} className="rounded-lg bg-white p-6 shadow-md">
+					<h3 className="mb-4 text-2xl">{title}</h3>
+					<div>
+						The app-specific shared secret is a unique code to
+						receive receipts for only this app's auto-renewable
+						subscriptions.
+					</div>
+					{index !== 3 ? (
+						<button className="mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white">
+							{title === "BALLONER" ? "PLAY" : "TRY"}
+						</button>
+					) : (
+						<button className="mt-4 rounded-lg bg-gray-500 px-4 py-2 text-white">
+							COMING SOON
+						</button>
+					)}
+				</div>
+			),
+		)}
+	</div>
+</section>
+
+<section className="bg-white py-12 text-center">
+	<blockquote className="mb-4 text-4xl text-gray-600">
+		"Our mission is <br /> Letting everyone find a balance between tech and
+		life."
+	</blockquote>
+	<div className="text-gray-500">Co-founder, Rene Wang</div>
 </section>
