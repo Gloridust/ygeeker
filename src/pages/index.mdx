@@ -3,9 +3,11 @@ title: YGeeker
 routeName: Entertainment
 ---
 
+import Link from "next/link";
+
 <section className="flex justify-center">
 	<div className="mb-10 flex h-[60vh] max-w-[900px] justify-start">
-		<h1 className="mb-2 flex flex-col justify-center text-5xl font-bold leading-[0.6] text-slate-700 sm:min-w-[600px]">
+		<h1 className="mb-2 flex flex-col justify-center text-3xl font-bold leading-[0.6] text-slate-700 sm:min-w-[600px] sm:text-5xl">
 			BECAUSE
 			<br />
 			WE ARE
@@ -25,43 +27,82 @@ routeName: Entertainment
 	<div className="max-w-[900px] text-center">
 		<h2 className="mb-4 text-3xl">Who we are</h2>
 		<div>
-			The app-specific shared secret is a unique code to receive receipts
-			for only this app's auto-renewable subscriptions. You may want to
-			use an app-specific shared secret if you're transferring this app to
-			another developer, or if you want to keep your primary shared secret
-			private.
+			We are young startup building amazing stuffs. We make things with
+			love, and only earn essentials to run our business. We have a
+			limited size but an unlimited creativity.
 		</div>
 	</div>
 </section>
 
-<section className="flex justify-center">
-	<div className="mb-10 grid max-w-[900px] grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-		{["I DIDN'T", "BALLONER", "CLIPHEMO", "OCEANION"].map(
-			(title, index) => (
-				<div key={index} className="rounded-lg bg-white p-6 shadow-md">
-					<h3 className="mb-4 text-2xl">{title}</h3>
-					<div>
-						The app-specific shared secret is a unique code to
-						receive receipts for only this app's auto-renewable
-						subscriptions.
-					</div>
-					{index !== 3 ? (
-						<button className="mt-4 rounded-lg bg-blue-500 px-4 py-2 text-white">
-							{title === "BALLONER" ? "PLAY" : "TRY"}
-						</button>
-					) : (
-						<button className="mt-4 rounded-lg bg-gray-500 px-4 py-2 text-white">
-							COMING SOON
-						</button>
-					)}
+<section className="flex justify-center py-12 mt-4">
+	<div className="max-w-[900px] w-full px-4 sm:px-0">
+		<div className="w-full product-showcase-container space-y-8">
+			<div className="flex flex-col items-center space-y-4 rounded-2xl bg-white p-4">
+				<div className="phone-mockup rounded-lg bg-gray-300 p-4">
+					{/* Replace with actual phone image */}
 				</div>
-			),
-		)}
-	</div>
+				<div className="flex items-center space-x-4">
+					<div className="icon rounded-full bg-green-600 p-4"></div>
+					<div className="flex flex-col items-start">
+						<h2 className="text-xl font-bold">ClipMemo</h2>
+						<div className="text-gray-600">
+							Build your own media notebook.
+						</div>
+					</div>
+				</div>
+				<button className="text-blue-600 px-6 py-2">
+					Try for free
+				</button>
+			</div>
+
+    		<div className="product-grid grid-colos-1 grid gap-4 sm:grid-cols-2">
+    			<Link href="/app/ididnt">
+    				<div className="product-card flex flex-col items-center justify-center rounded-2xl bg-white px-4 py-6 h-80">
+    					<div className="icon w-24 h-24 bg-gray-300 rounded-xl p-4"></div>
+    					<h2 className="text-xl font-bold mt-2">I Didn’t</h2>
+    					<div className="text-gray-600 ">Eliminate your bad habits</div>
+    					<button className="rounded-full px-6 py-2 text-blue-500 flex mt-4">
+    						Try for free
+    						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-blue-500">
+    							<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+    						</svg>
+    					</button>
+    				</div>
+    			</Link>
+
+    			<Link href="/app/ididnt">
+    				<div className="product-card flex flex-col items-center justify-center rounded-2xl bg-white px-4 py-6 h-80">
+    					<div className="icon w-24 h-24 bg-gray-300 rounded-xl p-4"></div>
+    					<h2 className="text-xl font-bold mt-2">I Didn’t</h2>
+    					<div className="text-gray-600 ">Eliminate your bad habits</div>
+    					<button className="rounded-full px-6 py-2 text-blue-500 flex mt-4">
+    						Try for free
+    						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-blue-500">
+    							<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+    						</svg>
+    					</button>
+    				</div>
+    			</Link>
+
+
+
+    		</div>
+
+    		<div className="flex justify-center">
+    			<button className="text-gray-700 underline flex items-center">
+    				Explore All Products
+    				<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+    					<path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+    				</svg>
+    			</button>
+    		</div>
+    	</div>
+    </div>
+
 </section>
 
-<section className="bg-white py-12 text-center">
-	<blockquote className="mb-4 text-4xl text-gray-600">
+<section className="mt-4 bg-white py-12 text-center">
+	<blockquote className="mb-4 text-3xl text-gray-600 sm:text-4xl">
 		"Our mission is <br /> Letting everyone find a balance between tech and
 		life."
 	</blockquote>

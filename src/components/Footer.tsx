@@ -78,7 +78,7 @@ export default function Footer({}) {
 							amazing stuffs.
 						</p>
 					</div>
-					<div className="container mx-auto mt-4 grid-cols-1 gap-0 sm:mt-0 sm:grid md:grid-cols-2">
+					<div className="container mx-auto mt-4 grid-cols-1 gap-2 sm:mt-0 sm:grid md:grid-cols-2">
 						{CUSTOM_LINKS.map((link) => (
 							<Link href={link.href} key={link.title}>
 								<div className="flex cursor-pointer items-center justify-self-end rounded-lg p-2 hover:bg-white sm:max-w-xs">
@@ -107,7 +107,7 @@ export default function Footer({}) {
 							<Link
 								key={link.title}
 								href={link.href}
-								className="ml-4 text-gray-500 hover:text-gray-700"
+								className="ml-4 text-sm text-gray-500 hover:text-gray-700"
 							>
 								{link.title}
 							</Link>
