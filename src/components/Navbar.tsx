@@ -89,11 +89,11 @@ export default function Navbar({
 
 			{/* Mobile menu */}
 			<div
-				className={`fixed left-0 right-0 top-0 z-40 transform bg-white pb-4 transition-transform duration-300 sm:hidden ${
+				className={`fixed left-0 right-0 top-0 z-50 transform bg-white pb-4 transition-transform duration-300 sm:hidden ${
 					isMenuOpen ? "translate-y-0" : "-translate-y-full"
 				}`}
 			>
-				<div className="flex flex-row-reverse items-center px-2 py-1">
+				<div className="mt-2 flex flex-row-reverse items-center px-6">
 					<button
 						onClick={() => setMenuOpen(false)}
 						className="rounded-full p-2"
@@ -114,6 +114,7 @@ export default function Navbar({
 						if (item.kind === "MdxPage" && item.route !== "/") {
 							return (
 								<Link
+									onClick={() => setMenuOpen(false)}
 									className="block px-4 py-2 text-slate-500 hover:text-black"
 									key={item.name}
 									href={item.route}

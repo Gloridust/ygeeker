@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import React, { useMemo } from "react";
 import { useState, useEffect } from "react";
 
-const ChapterItem = ({ item, meta }) => {
+const ChapterItem = ({ item, meta, handleCloseSidebar }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const { route } = useRouter();
 	const toggleOpen = () => setIsOpen(!isOpen);
@@ -58,7 +58,10 @@ const ChapterItem = ({ item, meta }) => {
 					</div>
 					{isOpen && (
 						<div className="py-2 pl-2">
-							<ChapterTree pageMap={item.children} />
+							<ChapterTree
+								handleCloseSidebar={handleCloseSidebar}
+								pageMap={item.children}
+							/>
 						</div>
 					)}
 				</div>
@@ -70,7 +73,7 @@ const ChapterItem = ({ item, meta }) => {
 						active && "font-bold"
 					}`}
 				>
-					<Link href={item.route}>
+					<Link onClick={handleCloseSidebar} href={item.route}>
 						{item.frontMatter?.title || item.name}
 					</Link>
 				</div>
@@ -113,7 +116,7 @@ const deepSortPageMap = (pageMap, meta) => {
 		});
 };
 
-const ChapterTree = ({ pageMap }) => {
+const ChapterTree = ({ pageMap, handleCloseSidebar }) => {
 	const meta = useMeta(pageMap);
 
 	const sortedPageMap = useMemo(
@@ -126,7 +129,12 @@ const ChapterTree = ({ pageMap }) => {
 	return (
 		<div className="chapter-tree pr-2">
 			{sortedPageMap.map((item, index) => (
-				<ChapterItem key={index} item={item} meta={meta} />
+				<ChapterItem
+					handleCloseSidebar={handleCloseSidebar}
+					key={index}
+					item={item}
+					meta={meta}
+				/>
 			))}
 		</div>
 	);
