@@ -5,42 +5,43 @@ title: Official YGeeker Support
 import DefaultLayout from "@/components/layout/Default";
 import Link from "next/link";
 
-<>
-	<section className="flex min-h-[40vh] w-full flex-col items-center justify-center">
-		<div>SUPPORT</div>
-		<div className="text-[56px] leading-[1.07143]">We are here to help</div>
-	</section>
-	<section className="flex justify-center">
-		<div className="grid w-[976px] grid-cols-2 gap-4 py-2 md:grid-cols-4">
-			{[
-				{
-					title: "ClipMemo",
-					route: "/support/clipmemo",
-				},
-				{
-					title: "Balloner",
-					route: "/support/balloner",
-				},
-				// Add more items here
-			].map((item) => (
-				<Link key={item.route} href={item.route}>
-					<div className="flex h-full w-full flex-col overflow-hidden rounded-2xl bg-white shadow-2xl">
-						<div className="aspect-square w-full">
-							<img className=""></img>
-						</div>
-						<div className="w-full bg-green-800 px-1 py-4 text-center text-white">
-							{item.title}
-						</div>
+<section className="flex min-h-[40vh] w-full flex-col items-center justify-center text-center">
+	<div>SUPPORT</div>
+	<div className="text-[56px] leading-[1.07143]">We are here to help</div>
+</section>
+<section className="flex justify-center px-4 sm:px-0">
+	<div className="grid w-[976px] grid-cols-2 gap-4 py-2 md:grid-cols-4">
+		{[
+			{
+				title: "ClipMemo",
+				route: "/support/clipmemo",
+				icon: "",
+			},
+			{
+				title: "Balloner",
+				route: "/support/balloner",
+			},
+			// Add more items here
+		].map((item) => (
+			<Link key={item.route} href={item.route}>
+				<div className="flex h-full w-full flex-col overflow-hidden rounded-2xl bg-white shadow-2xl">
+					<div className="aspect-square w-full">
+						<img className=""></img>
 					</div>
-				</Link>
-			))}
-		</div>
-	</section>
-	<section className="mt-24 flex w-full flex-col items-center bg-blue-500 py-10 text-white">
-		<h3 className="text-2xl">Still Need Help?</h3>
-		<div className="py-2">
+					<div className="w-full bg-green-800 px-1 py-4 text-center text-white">
+						{item.title}
+					</div>
+				</div>
+			</Link>
+		))}
+	</div>
+</section>
+<section className="mt-10 flex justify-center bg-blue-400 p-12 text-white">
+	<div className="max-w-[900px] text-center">
+		<h2 className="mb-4 text-3xl">Still Need Help?</h2>
+		<div>
 			You can write an email to us.You’ll get a reply within 2 business
 			days.
 		</div>
-	</section>
-</>
+	</div>
+</section>

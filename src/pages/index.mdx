@@ -71,13 +71,17 @@ import Link from "next/link";
     			</Link>
 
     			<Link href="/app/ididnt">
-    				<div className="product-card flex flex-col items-center justify-center rounded-2xl bg-white px-4 py-6 h-80">
+    				<div style={{
+    					background: "url(/image/balloner_bg.png)",
+    					backgroundPositionY: "bottom",
+    					backgroundSize: "cover"
+    				}} className="product-card flex flex-col items-center justify-center rounded-2xl bg-white px-4 py-6 h-80">
     					<div className="icon w-24 h-24 bg-gray-300 rounded-xl p-4"></div>
-    					<h2 className="text-xl font-bold mt-2">I Didn’t</h2>
-    					<div className="text-gray-600 ">Eliminate your bad habits</div>
-    					<button className="rounded-full px-6 py-2 text-blue-500 flex mt-4">
-    						Try for free
-    						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-blue-500">
+    					<h2 className="text-xl font-bold mt-2 text-white">Balloner</h2>
+    					<div className=" text-white">Explore the infinate sky</div>
+    					<button className="rounded-full px-6 py-2 text-blue-300 flex mt-4">
+    						Play for free
+    						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-blue-300">
     							<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
     						</svg>
     					</button>
