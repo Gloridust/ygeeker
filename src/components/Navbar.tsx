@@ -32,6 +32,8 @@ export default function Navbar({
 		}
 	}, [lastScrollTop, autoHide]);
 
+	console.log(pageMap);
+
 	return (
 		<>
 			<div
@@ -47,7 +49,6 @@ export default function Navbar({
 						</Link>
 					</div>
 					<div className="hidden sm:flex">
-						{/* Use CSS classes to hide on small screens and show on larger screens */}
 						{pageMap.map((item) => {
 							if (item.kind === "MdxPage" && item.route !== "/") {
 								return (

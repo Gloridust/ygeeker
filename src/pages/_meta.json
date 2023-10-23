@@ -9,7 +9,8 @@
 	},
 	"join": {
 		"title": "Join Us",
-		"type": "page"
+		"type": "page",
+		"display": "hidden"
 	},
 	"about": {
 		"title": "About",

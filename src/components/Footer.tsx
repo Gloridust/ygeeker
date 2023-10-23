@@ -37,10 +37,10 @@ const CUSTOM_LINKS = [
 		),
 	},
 	{
-		title: "Contact Us",
-		description: "Talk with our engineer and CEO",
+		title: "Join Us",
+		description: "Work with us",
 		color: "bg-orange-600",
-		href: "https://github.com/ygeeker",
+		href: "/join",
 		icon: (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -102,16 +102,20 @@ export default function Footer({}) {
 				</div>
 				<div className="mt-10 flex items-center justify-between space-x-8">
 					<img width={36} src="/logo.svg"></img>
-					<div className="flex">
+					<div className="flex items-center space-x-2 text-sm text-gray-500">
 						{FOOT_LINKS.map((link) => (
 							<Link
 								key={link.title}
 								href={link.href}
-								className="ml-4 text-sm text-gray-500 hover:text-gray-700"
+								className="ml-4 hover:text-gray-700"
 							>
 								{link.title}
 							</Link>
 						))}
+						<div className="hidden sm:flex">
+							<span className="pr-2">|</span>
+							<button>United States</button>
+						</div>
 					</div>
 				</div>
 			</footer>
