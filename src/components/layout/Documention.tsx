@@ -7,6 +7,8 @@ import Head from "next/head";
 import React from "react";
 import { useState } from "react";
 
+import Meta from "../Meta";
+
 export default function Documention({ pageOpts, children }) {
 	const documentionMap = pageOpts.pageMap.find(
 		(item) => item.name === "support",
@@ -20,9 +22,7 @@ export default function Documention({ pageOpts, children }) {
 
 	return (
 		<>
-			<Head>
-				<title>{pageOpts.title}</title>
-			</Head>
+			<Meta title={pageOpts.title} />
 			<div>
 				<Navbar
 					autoHide={true}

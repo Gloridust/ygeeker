@@ -7,12 +7,12 @@ import Head from "next/head";
 import { Link } from "nextra-theme-docs";
 import React from "react";
 
+import Meta from "../Meta";
+
 export default function DefaultLayout({ pageOpts, children }) {
 	return (
 		<>
-			<Head>
-				<title>{pageOpts.title}</title>
-			</Head>
+			<Meta title={pageOpts.title} />
 			<div>
 				<Navbar pageMap={pageOpts.pageMap} />
 				<main className="min-h-screen pt-[56px]">
