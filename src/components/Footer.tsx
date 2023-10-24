@@ -80,8 +80,12 @@ export default function Footer({}) {
 					</div>
 					<div className="container mx-auto mt-4 grid-cols-1 gap-2 sm:mt-0 sm:grid md:grid-cols-2">
 						{CUSTOM_LINKS.map((link) => (
-							<Link href={link.href} key={link.title}>
-								<div className="flex cursor-pointer items-center justify-self-end rounded-lg p-2 hover:bg-white sm:max-w-xs">
+							<Link
+								className="flex justify-end"
+								href={link.href}
+								key={link.title}
+							>
+								<div className="flex w-full cursor-pointer items-center justify-self-end rounded-lg p-2 hover:bg-white sm:max-w-xs">
 									<div
 										className={`rounded-full ${link.color} p-2`}
 									>
@@ -91,7 +95,7 @@ export default function Footer({}) {
 										<h3 className="text-xl">
 											{link.title}
 										</h3>
-										<p className="text-slate-500">
+										<p className="w-full text-slate-500">
 											{link.description}
 										</p>
 									</div>
