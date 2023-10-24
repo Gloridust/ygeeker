@@ -37,7 +37,7 @@ export default function Navbar({
 	return (
 		<>
 			<div
-				className={`fixed left-0 right-0 top-0 z-10 flex h-[48px] justify-center bg-white ${
+				className={`fixed left-0 right-0 top-0 z-10 flex h-[48px] justify-center bg-white backdrop-filter ${
 					!subNavbar && "shadow-sm"
 				} transition-all duration-300`}
 				style={{ top: navbarTop }}
