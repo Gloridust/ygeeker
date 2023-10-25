@@ -1,0 +1,5 @@
+{
+	"tutorial-basics": { "title": "Basic Usage", "sidebar_position": 2 },
+	"tutorial-extras": { "title": "Advance Usage", "sidebar_position": 3 },
+	"policy": { "title": "Policy", "sidebar_position": 4 }
+}

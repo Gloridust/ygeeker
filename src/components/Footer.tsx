@@ -77,6 +77,7 @@ export default function Footer({}) {
 							We are young team found at Chengdu, China. We build
 							amazing stuffs.
 						</p>
+						<div className="flex"></div>
 					</div>
 					<div className="container mx-auto mt-4 grid-cols-1 gap-2 sm:mt-0 sm:grid md:grid-cols-2">
 						{CUSTOM_LINKS.map((link) => (
@@ -91,11 +92,11 @@ export default function Footer({}) {
 									>
 										{link.icon}
 									</div>
-									<div className="ml-3">
+									<div className="ml-4">
 										<h3 className="text-xl">
 											{link.title}
 										</h3>
-										<p className="w-full text-slate-500">
+										<p className="w-full text-sm text-slate-500">
 											{link.description}
 										</p>
 									</div>

@@ -103,27 +103,18 @@ export default function Navbar({
 					</button>
 				</div>
 				<div className="px-8">
-					{pageMap.map((item) => {
-						if (item.kind === "MdxPage" && item.route !== "/") {
-							return (
-								<Link
-									onClick={() => setMenuOpen(false)}
-									className="block px-4 py-2 text-slate-500 hover:text-black"
-									key={item.name}
-									href={item.route}
-								>
-									{item.frontMatter.routeName}
-								</Link>
-							);
-						}
-						return null;
+					{navMap.map((item) => {
+						return (
+							<Link
+								onClick={() => setMenuOpen(false)}
+								className="block px-4 py-2 text-slate-500 hover:text-black"
+								key={item.name}
+								href={item.route}
+							>
+								{item.name}
+							</Link>
+						);
 					})}
-					<Link
-						className="block px-4 py-2 text-slate-500 hover:text-black"
-						href="/support"
-					>
-						Support
-					</Link>
 				</div>
 			</div>
 
