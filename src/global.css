@@ -34,3 +34,20 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+/* Add these styles to your existing stylesheet */
+@keyframes float {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	50% {
+		transform: translate(10px, 10px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+.float-label {
+	animation: float 5s infinite ease-in-out;
+}
