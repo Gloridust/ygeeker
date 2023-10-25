@@ -124,7 +124,7 @@ const ChapterTree = ({ pageMap, handleCloseSidebar }) => {
 		[pageMap, meta],
 	);
 
-	console.log("sorted", sortedPageMap);
+	// console.log("sorted", sortedPageMap);
 
 	return (
 		<div className="chapter-tree pr-2">

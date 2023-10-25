@@ -1,0 +1,13 @@
+{
+	"index": {
+		"title": "Yungeeker",
+		"type": "page"
+	},
+	"clipmemo": {
+		"title": "ClipMemo",
+		"icon": "",
+		"subheader": {
+			"enable": false
+		}
+	}
+}

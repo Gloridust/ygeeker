@@ -9,7 +9,7 @@ import { useState } from "react";
 
 import Meta from "../Meta";
 
-export default function Documention({ pageOpts, children }) {
+export default function Documention({ pageOpts, locale, children }) {
 	const documentionMap = pageOpts.pageMap.find(
 		(item) => item.name === "support",
 	).children;

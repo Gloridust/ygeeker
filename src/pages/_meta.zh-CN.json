@@ -1,0 +1,19 @@
+{
+	"index": {
+		"title": "Yungeeker",
+		"type": "page"
+	},
+	"support": {
+		"title": "Support",
+		"type": "page"
+	},
+	"join": {
+		"title": "Join Us",
+		"type": "page",
+		"display": "hidden"
+	},
+	"about": {
+		"title": "About",
+		"type": "page"
+	}
+}

@@ -1,0 +1,123 @@
+---
+title: YGeeker
+routeName: Entertainment
+---
+
+import Mission from "@/components/Page/Mission";
+import Image from "next/image";
+import Link from "next/link";
+
+<section className="flex justify-center">
+	<div className="mb-10 flex h-[60vh] max-w-[900px] justify-start">
+		<h1 className="mb-2 flex flex-col justify-center text-3xl font-bold leading-[0.6] text-slate-700 sm:min-w-[600px] sm:text-5xl">
+			BECAUSE
+			<br />
+			WE ARE
+			<br />
+			YGEEKER
+		</h1>
+		<div className="flex justify-center space-x-4">
+			<span className="text-blue-400">Joyful</span>
+			<span className="text-blue-400">Fun</span>
+			<span className="text-blue-400">Energy</span>
+			<span className="text-blue-400">Creative</span>
+		</div>
+	</div>
+</section>
+
+<section className="mb-10 flex justify-center bg-blue-400 p-12 text-white">
+	<div className="max-w-[900px] text-center">
+		<h2 className="mb-4 text-3xl">Who we are</h2>
+		<div>
+			We are young startup building amazing stuffs. We make things with
+			love, and only earn essentials to run our business. We have a
+			limited size but an unlimited creativity.
+		</div>
+	</div>
+</section>
+
+<section className="flex justify-center py-12 mt-4">
+	<div className="max-w-[900px] w-full px-4 sm:px-0">
+		<div className="w-full product-showcase-container space-y-5">
+			<Link href="/product/ididnt">
+				<div className="sm:flex items-center justify-center space-y-4 rounded-2xl bg-white p-4">
+						<div className="phone-mockup rounded-lg">
+							<Image alt="clipmemo" src="/image/screenshot/clipmemo_0_en-us.png" width={320} height={500}/>
+						</div>
+						<div className="sm:ml-8 px-4">
+							<div className="icon w-20 h-20 bg-gray-300 rounded-xl overflow-hidden">
+								<img className="w-full" src="/image/product/clipmemo.png" />
+							</div>
+							<div className="flex flex-col items-start mt-4">
+								<h2 className="text-2xl font-bold">ClipMemo</h2>
+								<div className="text-gray-600 mt-1">
+									Build your own media notebook.
+								</div>
+							</div>
+							<button className="rounded-full py-2 text-blue-500 flex mt-4">
+								Try for free
+								<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-blue-500">
+									<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+								</svg>
+							</button>
+						</div>
+				</div>
+			</Link>
+
+    		<div className="product-grid grid-colos-1 grid gap-4 sm:grid-cols-2">
+    			<Link href="/product/ididnt">
+    				<div className="product-card flex flex-col items-center justify-center rounded-2xl bg-white px-4 py-6 h-80">
+    					<div className="icon w-20 h-20 bg-gray-300 rounded-xl overflow-hidden">
+    						<img className="w-full" src="/image/product/ididnt.png" />
+    					</div>
+    					<h2 className="text-xl font-bold mt-2">I Didn’t</h2>
+    					<div className="text-gray-600 ">Eliminate your bad habits</div>
+    					<button className="rounded-full px-6 py-2 text-blue-500 flex mt-4">
+    						Try for free
+    						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-blue-500">
+    							<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+    						</svg>
+    					</button>
+    				</div>
+    			</Link>
+    			<Link href="/product/balloner">
+    				<div style={{
+    					background: "url(/image/balloner_bg.png)",
+    					backgroundPositionY: "bottom",
+    					backgroundSize: "cover"
+    				}} className="product-card flex flex-col items-center justify-center rounded-2xl bg-white px-4 py-6 h-80">
+    					<div className="icon w-20 h-20 bg-gray-300 rounded-xl overflow-hidden">
+    						<img className="w-full" src="/image/product/balloner.png" />
+    					</div>
+    					<h2 className="text-xl font-bold mt-2 text-white">Balloner</h2>
+    					<div className=" text-white">Explore the infinate sky</div>
+    					<button className="rounded-full px-6 py-2 text-blue-300 flex mt-4">
+    						Play for free
+    						<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className="fill-blue-300">
+    							<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+    						</svg>
+    					</button>
+    				</div>
+    			</Link>
+    		</div>
+
+    		<div className="flex justify-center py-4">
+    			<button className="text-gray-600 flex items-center space-x-1 hover:underline">
+    				Explore All Products
+    				<svg className="fill-gray-600" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+    					<path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+    				</svg>
+    			</button>
+    		</div>
+    	</div>
+    </div>
+
+</section>
+
+<section className="mt-1 bg-white px-2 py-12 text-center sm:mt-4">
+	<blockquote className="mb-4 text-2xl text-gray-600 sm:text-4xl">
+		"Our mission is <br /> Letting everyone find a balance between tech and
+		life."
+	</blockquote>
+	<div className="text-gray-500">Co-founder, Rene Wang</div>
+</section>

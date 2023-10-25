@@ -3,8 +3,6 @@ title: FAQ
 sidebar_position: 1
 ---
 
-import Summery from "../../../components/Typography/Summery";
-
 # Frequently Asked Question
 
 ## How can I sync data across device?
