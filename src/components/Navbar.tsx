@@ -5,10 +5,12 @@ export default function Navbar({
 	pageMap,
 	subNavbar,
 	autoHide,
+	navMap,
 }: {
 	subNavbar?: any;
 	autoHide?: boolean;
 	pageMap?: any[];
+	navMap?: any[];
 }) {
 	const [navbarTop, setNavbarTop] = useState("0");
 	const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -49,26 +51,17 @@ export default function Navbar({
 						</Link>
 					</div>
 					<div className="hidden sm:flex">
-						{pageMap.map((item) => {
-							if (item.kind === "MdxPage" && item.route !== "/") {
-								return (
-									<Link
-										className="ml-8 text-slate-500 hover:text-black"
-										key={item.name}
-										href={item.route}
-									>
-										{item.frontMatter.routeName}
-									</Link>
-								);
-							}
-							return null;
+						{navMap.map((item) => {
+							return (
+								<Link
+									className="ml-8 text-slate-500 hover:text-black"
+									key={item.name}
+									href={item.route}
+								>
+									{item.name}
+								</Link>
+							);
 						})}
-						<Link
-							className="ml-8 text-slate-500 hover:text-black"
-							href="/support"
-						>
-							Support
-						</Link>
 					</div>
 					<button
 						className="sm:hidden"

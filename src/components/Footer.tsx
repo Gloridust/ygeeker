@@ -3,7 +3,7 @@ import React from "react";
 
 const CUSTOM_LINKS = [
 	{
-		title: "Products",
+		title: "Apps & Games",
 		description: "Discover handful work and make your life easier",
 		color: "bg-green-700",
 		href: "",

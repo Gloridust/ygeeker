@@ -7,6 +7,7 @@ import Head from "next/head";
 import React from "react";
 import { useState } from "react";
 
+import LocalNav from "../LocalNav";
 import Meta from "../Meta";
 
 export default function Documention({ pageOpts, locale, children }) {
@@ -27,40 +28,25 @@ export default function Documention({ pageOpts, locale, children }) {
 				<Navbar
 					autoHide={true}
 					pageMap={pageOpts.pageMap}
+					navMap={[
+						{
+							name: "Product",
+							route: "/products",
+						},
+						{
+							name: "Account",
+							route: "/account",
+						},
+						{
+							name: "Support",
+							route: "/support",
+						},
+					]}
 					subNavbar={
-						<div className="flex h-[3.0588235294rem] w-full justify-center border-b-2 border-b-slate-200 backdrop-blur-lg backdrop-filter">
-							<div className="flex w-full items-center justify-between px-8 sm:w-fit sm:min-w-[976px]">
-								<div className="flex">
-									<button
-										onClick={() =>
-											setDrawerOpen(!isDrawerOpen)
-										}
-										className="mr-3 sm:hidden"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											height="24"
-											viewBox="0 -960 960 960"
-											width="24"
-										>
-											<path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm440-80h120v-560H640v560Zm-80 0v-560H200v560h360Zm80 0h120-120Z" />
-										</svg>
-									</button>
-									<div className="text-lg">
-										{meta?.title || "Documention"}
-									</div>
-								</div>
-
-								<div className="flex text-[.7058823529rem]">
-									<div className="ml-3 px-2 py-1">
-										Contact
-									</div>
-									<div className="ml-3 rounded-full bg-green-700 px-2 py-1 text-white">
-										Download
-									</div>
-								</div>
-							</div>
-						</div>
+						<LocalNav
+							title={meta?.title || "Documention"}
+							leadingCallback={() => setDrawerOpen(!isDrawerOpen)}
+						/>
 					}
 				/>
 				<main className="relative flex min-h-screen justify-center pt-0 sm:pt-[40px]">

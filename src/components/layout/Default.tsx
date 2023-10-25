@@ -14,7 +14,23 @@ export default function DefaultLayout({ pageOpts, children }) {
 		<>
 			<Meta title={pageOpts.title} />
 			<div>
-				<Navbar pageMap={pageOpts.pageMap} />
+				<Navbar
+					navMap={[
+						{
+							name: "Product",
+							route: "/products",
+						},
+						{
+							name: "Account",
+							route: "/account",
+						},
+						{
+							name: "Support",
+							route: "/support",
+						},
+					]}
+					pageMap={pageOpts.pageMap}
+				/>
 				<main className="min-h-screen pt-[56px]">
 					<div>{children}</div>
 				</main>
