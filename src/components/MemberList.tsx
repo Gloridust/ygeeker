@@ -19,7 +19,8 @@ export default () => {
 					name: "Gloridust",
 					avator: "/image/team/gloridust.png",
 					twitter: "",
-					description: "",
+					description:
+						"Gloridust comes from Chengdu and currently live in Yibin. He's a green hand for front-end and python and Rene is his master. Like coding, living, and faraway.",
 				},
 				{
 					title: "CFO",
@@ -30,11 +31,12 @@ export default () => {
 						"Charles comes frrom Chengdu, China. He's a lgbtq+, and he likes hackintosh, XDA, and car.",
 				},
 				{
-					title: "Cleaner",
-					name: "Bing",
+					title: "Art Director",
+					name: "BinQQing",
 					avator: "/image/team/bing.png",
 					twitter: "",
-					description: "",
+					description:
+						"BinQQing has his own dream in design and art,he wants to achieve his dream somewhere like here.",
 				},
 			].map((item, index) => (
 				<div
