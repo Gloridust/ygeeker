@@ -12,7 +12,10 @@ import Meta from "../Meta";
 export default function DefaultLayout({ pageOpts, children }) {
 	return (
 		<>
-			<Meta title={pageOpts.title} />
+			<Meta
+				title={pageOpts.title}
+				description={pageOpts.frontMatter.description}
+			/>
 			<div>
 				<Navbar
 					navMap={[

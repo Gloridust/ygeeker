@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import useMeta from "@/utils/useMeta";
 import { MDXProvider } from "@mdx-js/react";
-import Head from "next/head";
 import React from "react";
 import { useState } from "react";
 
@@ -23,7 +22,10 @@ export default function Documention({ pageOpts, locale, children }) {
 
 	return (
 		<>
-			<Meta title={pageOpts.title} />
+			<Meta
+				title={pageOpts.title}
+				description={pageOpts.frontMatter.description}
+			/>
 			<div>
 				<Navbar
 					autoHide={true}
