@@ -21,6 +21,10 @@ export default function DefaultLayout({ pageOpts, children }) {
 							route: "/products",
 						},
 						{
+							name: "News",
+							route: "/blog",
+						},
+						{
 							name: "Account",
 							route: "/account",
 						},

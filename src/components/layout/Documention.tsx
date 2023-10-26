@@ -34,6 +34,10 @@ export default function Documention({ pageOpts, locale, children }) {
 							route: "/products",
 						},
 						{
+							name: "News",
+							route: "/blog",
+						},
+						{
 							name: "Account",
 							route: "/account",
 						},
