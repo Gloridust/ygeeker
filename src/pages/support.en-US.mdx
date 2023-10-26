@@ -3,11 +3,14 @@ title: Official YGeeker Support
 ---
 
 import DefaultLayout from "@/components/layout/Default";
+import Image from "next/image";
 import Link from "next/link";
 
-<section className="flex min-h-[40vh] w-full flex-col items-center justify-center text-center font-koulen">
-	<div>SUPPORT</div>
-	<div className="text-[56px] leading-[1.07143]">We are here to help</div>
+<section className="flex min-h-[40vh] w-full flex-col items-center justify-center py-4 text-center font-koulen">
+	<div className="text-2xl">SUPPORT</div>
+	<div className="text-5xl leading-[1.07143] sm:text-8xl">
+		We are here to help
+	</div>
 </section>
 <section className="flex justify-center px-4 sm:px-0">
 	<div className="grid w-[976px] grid-cols-2 gap-4 py-2 md:grid-cols-4">
@@ -15,20 +18,39 @@ import Link from "next/link";
 			{
 				title: "ClipMemo",
 				route: "/support/clipmemo/intro",
-				icon: "",
+				icon: "/image/product/clipmemo.png",
+			},
+			{
+				title: "I Didn't",
+				route: "/support/clipmemo/intro",
+				icon: "/image/product/ididnt.png",
+			},
+			{
+				title: "YgkTool",
+				route: "/support/clipmemo/intro",
+				icon: "/image/product/ygktool.png",
 			},
 			{
 				title: "Balloner",
 				route: "/support/balloner",
+				icon: "/image/product/balloner.png",
 			},
 			// Add more items here
 		].map((item) => (
 			<Link key={item.route} href={item.route}>
 				<div className="flex h-full w-full flex-col overflow-hidden rounded-2xl bg-white shadow-2xl">
-					<div className="aspect-square w-full">
-						<img className=""></img>
+					<div className="flex aspect-square w-full justify-center">
+						<div className="flex flex-col justify-center">
+							<Image
+								className="rounded-2xl"
+								alt=""
+								height="100"
+								width="100"
+								src={item.icon}
+							></Image>
+						</div>
 					</div>
-					<div className="w-full bg-green-800 px-1 py-4 text-center text-white">
+					<div className="w-full bg-green-800 px-1 py-4 text-center text-xl text-white">
 						{item.title}
 					</div>
 				</div>
@@ -40,7 +62,7 @@ import Link from "next/link";
 	<div className="max-w-[900px] text-center">
 		<h2 className="mb-4 text-3xl">Still Need Help?</h2>
 		<div>
-			You can write an email to us.You’ll get a reply within 2 business
+			You can write an email to us. You’ll get a reply within 2 business
 			days.
 		</div>
 	</div>

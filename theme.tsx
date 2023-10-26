@@ -41,8 +41,8 @@ export default function Theme({ children, pageOpts }) {
 	const { title, frontMatter, headings } = pageOpts;
 
 	return (
-		<html className={`${sans.variable} ${koulen.variable}`}>
+		<div className={`${sans.variable} ${koulen.variable} font-sans`}>
 			<Layout pageOpts={pageOpts}>{children}</Layout>
-		</html>
+		</div>
 	);
 }
