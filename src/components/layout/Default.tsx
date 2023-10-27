@@ -38,7 +38,7 @@ export default function DefaultLayout({ pageOpts, children }) {
 					]}
 					pageMap={pageOpts.pageMap}
 				/>
-				<main className="min-h-screen pt-[56px]">
+				<main className="min-h-[80vh] pt-[56px]">
 					<div>{children}</div>
 				</main>
 				<Footer />
