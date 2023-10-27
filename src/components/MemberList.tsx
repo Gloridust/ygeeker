@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default () => {
@@ -10,7 +11,7 @@ export default () => {
 					title: "Co-founder",
 					name: "Rene",
 					avator: "/image/team/rene.png",
-					twitter: "",
+					twitter: "rea1DonandTrump",
 					description:
 						"Rene starts coding when he was 14. He's more like a leading enginner than a CEO at YGeeker. He likes painting as well.",
 				},
@@ -34,7 +35,7 @@ export default () => {
 					title: "Art Director",
 					name: "BinQQing",
 					avator: "/image/team/bing.png",
-					twitter: "",
+					twitter: "SovietwanG114",
 					description:
 						"BinQQing has his own dream in design and art,he wants to achieve his dream somewhere like here.",
 				},
@@ -71,7 +72,11 @@ export default () => {
 					<div className="px-2 py-6 text-center">
 						<p className="font-regular text-sm">{item.title}</p>
 						<h3 className="text-lg font-bold">{item.name}</h3>
-						<p className="text-blue-500">@RealDonaldTrump</p>
+						<p className="text-blue-500">
+							<Link href={`https://twitter.com/${item.twitter}`}>
+								@{item.twitter}
+							</Link>
+						</p>
 					</div>
 				</div>
 			))}

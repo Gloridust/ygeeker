@@ -19,6 +19,12 @@ export default function Meta({
 		<Head>
 			<title>{title}</title>
 
+			<link
+				rel="alternate"
+				href="https://www.ygeeker.com/zh-CN"
+				hrefLang="zh-CN"
+			></link>
+
 			{/* Primary Meta Tags */}
 			<meta name="title" content={title} />
 			<meta name="description" content={description} />

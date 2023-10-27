@@ -119,7 +119,9 @@ export default function Footer({}) {
 						))}
 						<div className="hidden sm:flex">
 							<span className="pr-2">|</span>
-							<button>United States</button>
+							<Link href="/choose-country-region">
+								United States
+							</Link>
 						</div>
 					</div>
 				</div>
