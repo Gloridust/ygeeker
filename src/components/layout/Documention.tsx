@@ -35,7 +35,6 @@ export default function Documention({ pageOpts, children }) {
 			<div>
 				<Navbar
 					autoHide={true}
-					pageMap={pageOpts.pageMap}
 					subNavbar={
 						<LocalNav
 							title={meta?.title || "Documention"}

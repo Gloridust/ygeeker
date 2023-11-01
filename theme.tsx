@@ -32,6 +32,7 @@ function Layout({ pageOpts, children, ...props }) {
 
 	switch (pageOpts.route) {
 		case "/about":
+		case "/legal/privacy":
 			return <Article pageOpts={pageOpts}>{children}</Article>;
 		default:
 			return (

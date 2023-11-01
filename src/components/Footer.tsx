@@ -6,7 +6,7 @@ import React from "react";
 const FOOT_LINKS = [
 	{
 		title: "Privacy",
-		href: "",
+		href: "/legal/privacy",
 	},
 	{
 		title: "Term of Use",
@@ -14,11 +14,12 @@ const FOOT_LINKS = [
 	},
 ];
 
-export default function Footer({ actions }) {
+export default function Footer({ actions, text }) {
 	const { locale } = useRouter();
 
 	if (!!!actions) {
 		actions = themeConfig.footer[locale].actions;
+		text = themeConfig.footer[locale].text;
 	}
 
 	return (
@@ -27,10 +28,7 @@ export default function Footer({ actions }) {
 				<div className="sm:flex sm:justify-between">
 					<div className="h-full sm:mr-8 md:text-left">
 						<h2 className="mb-4 text-2xl font-bold">YGeeker</h2>
-						<p>
-							We are young team found at Chengdu, China. We build
-							amazing stuffs.
-						</p>
+						<p>{text}</p>
 						<div className="flex"></div>
 					</div>
 					<div className="container mx-auto mt-4 grid-cols-1 gap-2 sm:mt-0 sm:grid md:grid-cols-2">

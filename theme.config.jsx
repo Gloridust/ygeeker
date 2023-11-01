@@ -2,12 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default {
-	logo: <span>My Nextra Documentation</span>,
-	project: {
-		link: "https://github.com/shuding/nextra",
-	},
 	navbar: {
-		component: Navbar,
 		"en-US": {
 			component: Navbar,
 			items: [
@@ -54,6 +49,7 @@ export default {
 	footer: {
 		"en-US": {
 			component: Footer,
+			text: "We are young team found at Chengdu, China. We build amazing stuffs.",
 			actions: [
 				{
 					title: "About",
@@ -111,6 +107,7 @@ export default {
 		},
 		"zh-CN": {
 			component: Footer,
+			text: "We are young team found at Chengdu, China. We build amazing stuffs.",
 			actions: [
 				{
 					title: "关于",
@@ -130,7 +127,7 @@ export default {
 					),
 				},
 				{
-					title: "Open Source",
+					title: "开源",
 					description: "Join our community and build stuff together",
 					color: "bg-blue-600",
 					href: "https://github.com/ygeeker",
@@ -147,7 +144,7 @@ export default {
 					),
 				},
 				{
-					title: "Join Us",
+					title: "加入我们",
 					description: "Work with us",
 					color: "bg-orange-600",
 					href: "/join",
