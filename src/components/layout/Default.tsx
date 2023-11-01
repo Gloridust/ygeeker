@@ -1,15 +1,18 @@
 import ChapterTree from "@/components/FolderTree";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import themeConfig from "@/theme.config";
 import useMeta from "@/utils/useMeta";
 import { MDXProvider } from "@mdx-js/react";
-import Head from "next/head";
-import { Link } from "nextra-theme-docs";
+import { useRouter } from "next/router";
 import React from "react";
 
 import Meta from "../Meta";
 
 export default function DefaultLayout({ pageOpts, children }) {
+	const { locale } = useRouter();
+
+	const Footer = themeConfig.footer[locale].component;
+	const Navbar = themeConfig.navbar[locale].component;
+
 	return (
 		<>
 			<Meta
@@ -17,27 +20,7 @@ export default function DefaultLayout({ pageOpts, children }) {
 				description={pageOpts.frontMatter.description}
 			/>
 			<div>
-				<Navbar
-					navMap={[
-						{
-							name: "Product",
-							route: "/products",
-						},
-						{
-							name: "News",
-							route: "/blog",
-						},
-						{
-							name: "Account",
-							route: "/account",
-						},
-						{
-							name: "Support",
-							route: "/support",
-						},
-					]}
-					pageMap={pageOpts.pageMap}
-				/>
+				<Navbar pageMap={pageOpts.pageMap} />
 				<main className="min-h-[80vh] pt-[56px]">
 					<div>{children}</div>
 				</main>

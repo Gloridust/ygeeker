@@ -2,13 +2,20 @@ import ChapterTree from "@/components/FolderTree";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ArticleMdxProvider from "@/components/Typography/ArticleMdxProvider";
+import themeConfig from "@/theme.config";
 import useMeta from "@/utils/useMeta";
 import { MDXProvider } from "@mdx-js/react";
+import { useRouter } from "next/router";
 import React from "react";
 
 import Meta from "../Meta";
 
 export default function Article({ children, pageOpts }) {
+	const { locale } = useRouter();
+
+	const Footer = themeConfig.footer[locale].component;
+	const Navbar = themeConfig.navbar[locale].component;
+
 	return (
 		<>
 			<Meta
@@ -16,7 +23,7 @@ export default function Article({ children, pageOpts }) {
 				description={pageOpts.frontMatter.description}
 			/>
 			<div>
-				<Navbar autoHide={true} pageMap={pageOpts.pageMap} />
+				<Navbar autoHide={true} />
 				<main className="relative mt-16 flex justify-center bg-white py-8 sm:pt-[40px]">
 					<article className="px-6 py-6 sm:px-2 md:w-[900px] md:rounded-3xl">
 						<MDXProvider

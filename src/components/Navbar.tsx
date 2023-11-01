@@ -1,13 +1,13 @@
+import themeConfig from "@/theme.config";
+import { useRouter } from "next/router";
 import { Link } from "nextra-theme-docs";
 import React, { useState, useEffect } from "react";
-
-import themeConfig from "../../theme.config";
 
 export default function Navbar({
 	pageMap,
 	subNavbar,
 	autoHide,
-	navMap = themeConfig["navbar"]["items"],
+	navMap,
 }: {
 	subNavbar?: any;
 	autoHide?: boolean;
@@ -17,6 +17,7 @@ export default function Navbar({
 	const [navbarTop, setNavbarTop] = useState("0");
 	const [lastScrollTop, setLastScrollTop] = useState(0);
 	const [isMenuOpen, setMenuOpen] = useState(false);
+	const { locale } = useRouter();
 
 	useEffect(() => {
 		if (autoHide) {
@@ -35,6 +36,10 @@ export default function Navbar({
 			return () => window.removeEventListener("scroll", handleScroll);
 		}
 	}, [lastScrollTop, autoHide]);
+
+	if (!!!navMap) {
+		navMap = themeConfig.navbar[locale].items;
+	}
 
 	return (
 		<>
