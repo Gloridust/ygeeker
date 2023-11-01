@@ -1,11 +1,13 @@
 import { Link } from "nextra-theme-docs";
 import React, { useState, useEffect } from "react";
 
+import themeConfig from "../../theme.config";
+
 export default function Navbar({
 	pageMap,
 	subNavbar,
 	autoHide,
-	navMap,
+	navMap = themeConfig["navbar"]["items"],
 }: {
 	subNavbar?: any;
 	autoHide?: boolean;

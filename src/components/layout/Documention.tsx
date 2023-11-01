@@ -1,6 +1,7 @@
 import ChapterTree from "@/components/FolderTree";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ArticleMdxProvider from "@/components/Typography/ArticleMdxProvider";
 import useMeta from "@/utils/useMeta";
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
@@ -30,24 +31,6 @@ export default function Documention({ pageOpts, locale, children }) {
 				<Navbar
 					autoHide={true}
 					pageMap={pageOpts.pageMap}
-					navMap={[
-						{
-							name: "Product",
-							route: "/products",
-						},
-						{
-							name: "News",
-							route: "/blog",
-						},
-						{
-							name: "Account",
-							route: "/account",
-						},
-						{
-							name: "Support",
-							route: "/support",
-						},
-					]}
 					subNavbar={
 						<LocalNav
 							title={meta?.title || "Documention"}
@@ -89,58 +72,7 @@ export default function Documention({ pageOpts, locale, children }) {
 						/>
 					</aside>
 					<article className="bg-white px-6 py-6 sm:px-2 md:w-[900px] md:rounded-3xl md:px-8">
-						<MDXProvider
-							components={{
-								h1: (props) => (
-									<h1
-										className="leading=[1.08349] text-[2.8235294118rem] font-semibold"
-										{...props}
-									/>
-								),
-								h2: (props) => (
-									<h2
-										className="py-2 text-[1.4em] font-bold"
-										{...props}
-									/>
-								),
-								h3: (props) => (
-									<h3
-										className="leading=[1.125] py-2 text-[1.8823529412em] font-bold"
-										{...props}
-									/>
-								),
-								p: (props) => (
-									<p
-										className="mt-1 leading-[1.52947]  text-slate-700"
-										{...props}
-									/>
-								),
-								image: (props) => (
-									// @ts-ignore
-									<img className="mt-[0.75em]" {...props} />
-								),
-								li: (props) => (
-									<li
-										className="list-inside list-disc"
-										{...props}
-									/>
-								),
-								a: (props) => (
-									<a
-										className="text-blue-600 hover:underline"
-										{...props}
-									/>
-								),
-								pre: (props) => (
-									<pre
-										className="rounded bg-gray-100 p-4"
-										{...props}
-									/>
-								),
-							}}
-						>
-							{children}
-						</MDXProvider>
+						<ArticleMdxProvider>{children}</ArticleMdxProvider>
 					</article>
 				</main>
 				<Footer />

@@ -43,4 +43,4 @@ These Terms shall be governed by the laws of the United States, excluding its co
 
 ## 8. Contact Information
 
-For any questions about these Terms, please contact us at yungeeker@rene.wang.
+For any questions about these Terms, please contact us at YGeeker@rene.wang.

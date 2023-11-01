@@ -9,7 +9,7 @@ Last Updated: 2023-08-21
 
 ## Introduction
 
-Yungeeker, Ltd ("We," "Our," or "Us") operates the ClipMemo mobile application ("App"). This page informs you of our policies regarding the collection, use, and disclosure of personal information when you use our App.
+YGeeker, Ltd ("We," "Our," or "Us") operates the ClipMemo mobile application ("App"). This page informs you of our policies regarding the collection, use, and disclosure of personal information when you use our App.
 
 By using ClipMemo, you agree to the collection and use of information in accordance with this policy.
 
@@ -48,4 +48,4 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 ## Contact Us
 
-If you have any questions or concerns about this Privacy Policy, please contact us at yungeeker@gmail.com.
+If you have any questions or concerns about this Privacy Policy, please contact us at YGeeker@gmail.com.

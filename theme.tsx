@@ -1,3 +1,4 @@
+import Article from "@/components/layout/Article";
 import DefaultLayout from "@/components/layout/Default";
 import Documention from "@/components/layout/Documention";
 import { Noto_Sans_Display, Koulen } from "next/font/google";
@@ -30,6 +31,8 @@ function Layout({ pageOpts, children, ...props }) {
 	}
 
 	switch (pageOpts.route) {
+		case "/about":
+			return <Article pageOpts={pageOpts}>{children}</Article>;
 		default:
 			return (
 				<DefaultLayout pageOpts={pageOpts}>{children}</DefaultLayout>

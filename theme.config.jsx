@@ -7,6 +7,25 @@ export default {
 	},
 	navbar: {
 		component: Navbar,
+		items: [
+			{
+				name: "Product",
+				route: "/products",
+			},
+			{
+				name: "News",
+				route: "/blog",
+			},
+			{
+				name: "Account",
+				route: "/account",
+			},
+			{
+				name: "Support",
+				route: "/support",
+			},
+		],
 	},
+	footer: {},
 	// ... other theme options
 };

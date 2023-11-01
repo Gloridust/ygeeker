@@ -3,10 +3,10 @@ import React from "react";
 
 const CUSTOM_LINKS = [
 	{
-		title: "Apps & Games",
-		description: "Discover handful work and make your life easier",
+		title: "About",
+		description: "Discover our value and get media materials.",
 		color: "bg-green-700",
-		href: "",
+		href: "/about",
 		icon: (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
