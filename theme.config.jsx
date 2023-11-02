@@ -264,7 +264,7 @@ export default {
 				},
 				{
 					title: "网站地图",
-					description: "Explore the full site",
+					description: "探索整个 YGeeker 网站",
 					color: "bg-gray-600",
 					href: "/sitemap",
 					icon: (

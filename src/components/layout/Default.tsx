@@ -18,6 +18,7 @@ export default function DefaultLayout({ pageOpts, children }) {
 			<Meta
 				title={pageOpts.title}
 				description={pageOpts.frontMatter.description}
+				keywords={pageOpts.frontMatter.keywords}
 			/>
 			<div>
 				<Navbar pageMap={pageOpts.pageMap} />
