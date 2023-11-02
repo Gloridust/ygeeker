@@ -8,8 +8,8 @@ export default {
 				title: "Product",
 				links: [
 					{ name: "ClipMemo", href: "/product/clipmemo" },
-					{ name: "I Didn't", href: "#" },
-					{ name: "Ygktool", href: "#" },
+					{ name: "I Didn't", href: "/product/ididnt" },
+					{ name: "Ygktool", href: "/product/ygktool" },
 				],
 			},
 			{
@@ -22,14 +22,17 @@ export default {
 			{
 				title: "Support",
 				links: [
-					{ name: "ClipMemo", href: "/product/clipmemo" },
-					{ name: "I Didn't", href: "#" },
-					{ name: "Ygktool", href: "#" },
+					{ name: "ClipMemo", href: "/support/clipmemo/intro" },
+					{ name: "I Didn't", href: "/support/ididnt" },
+					{ name: "Ygktool", href: "/support/ygktool" },
 				],
 			},
 			{
 				title: "Legal",
-				links: [{ name: "Privacy Policy", href: "/product/clipmemo" }],
+				links: [
+					{ name: "Privacy Policy", href: "/legal/privacy" },
+					{ name: "Term of Use", href: "/legal/terms/sites" },
+				],
 			},
 			{
 				title: "About YGeeker",
@@ -45,28 +48,31 @@ export default {
 				title: "产品",
 				links: [
 					{ name: "ClipMemo", href: "/product/clipmemo" },
-					{ name: "I Didn't", href: "#" },
-					{ name: "Ygktool", href: "#" },
+					{ name: "I Didn't", href: "/product/ididnt" },
+					{ name: "Ygktool", href: "/product/ygktool" },
 				],
 			},
 			{
 				title: "娱乐",
 				links: [
-					{ name: "Balloner", href: "#" },
-					{ name: "Oceanion", href: "#" },
+					{ name: "Balloner", href: "/" },
+					{ name: "Oceanion", href: "/" },
 				],
 			},
 			{
 				title: "支持",
 				links: [
-					{ name: "ClipMemo", href: "/product/clipmemo" },
-					{ name: "I Didn't", href: "#" },
-					{ name: "Ygktool", href: "#" },
+					{ name: "ClipMemo", href: "/support/clipmemo/intro" },
+					{ name: "I Didn't", href: "/support/ididnt" },
+					{ name: "Ygktool", href: "/support/ygktool" },
 				],
 			},
 			{
 				title: "法务",
-				links: [{ name: "Privacy Policy", href: "/product/clipmemo" }],
+				links: [
+					{ name: "Privacy Policy", href: "/legal/privacy" },
+					{ name: "Term of Use", href: "/legal/terms/sites" },
+				],
 			},
 			{
 				title: "关于",
