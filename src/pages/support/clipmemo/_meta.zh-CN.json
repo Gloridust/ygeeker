@@ -1,5 +1,5 @@
 {
-	"tutorial-basics": { "title": "Basic Usage", "sidebar_position": 2 },
-	"tutorial-extras": { "title": "Advance Usage", "sidebar_position": 3 },
-	"policy": { "title": "Policy", "sidebar_position": 4 }
+	"tutorial-basics": { "title": "基础使用", "sidebar_position": 2 },
+	"tutorial-extras": { "title": "进阶用法", "sidebar_position": 3 },
+	"legal": { "title": "法务", "sidebar_position": 4 }
 }

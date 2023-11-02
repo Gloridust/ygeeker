@@ -102,6 +102,23 @@ export default {
 						</svg>
 					),
 				},
+				{
+					title: "Sitemap",
+					description: "Explore the full site",
+					color: "bg-orange-600",
+					href: "/join",
+					icon: (
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							className="fill-white"
+							height="24"
+							viewBox="0 -960 960 960"
+							width="24"
+						>
+							<path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+						</svg>
+					),
+				},
 			],
 			links: [
 				{
@@ -116,11 +133,11 @@ export default {
 		},
 		"zh-CN": {
 			component: Footer,
-			text: "We are young team found at Chengdu, China. We build amazing stuffs.",
+			text: "我们是设立在成都的创业团队。我们致力于创造美好的东西。",
 			actions: [
 				{
 					title: "关于",
-					description: "Discover our value and get media materials.",
+					description: "深入了解我们的理念与故事",
 					color: "bg-green-700",
 					href: "/about",
 					icon: (
@@ -137,7 +154,7 @@ export default {
 				},
 				{
 					title: "开源",
-					description: "Join our community and build stuff together",
+					description: "加入、共创我们的开源社区",
 					color: "bg-blue-600",
 					href: "https://github.com/ygeeker",
 					icon: (
@@ -154,7 +171,7 @@ export default {
 				},
 				{
 					title: "加入我们",
-					description: "Work with us",
+					description: "与我们并肩前行",
 					color: "bg-orange-600",
 					href: "/join",
 					icon: (

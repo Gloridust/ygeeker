@@ -1,6 +1,4 @@
-import ArticleMdxProvider from "@/components/Typography/ArticleMdxProvider";
 import themeConfig from "@/theme.config";
-import useMeta from "@/utils/useMeta";
 import { MDXProvider } from "@mdx-js/react";
 import { useRouter } from "next/router";
 import React from "react";
