@@ -16,6 +16,7 @@ export default function Article({ children, pageOpts }) {
 			<Meta
 				title={pageOpts.title}
 				description={pageOpts.frontMatter.description}
+				author={pageOpts.frontMatter.author}
 			/>
 			<div>
 				<Navbar autoHide={true} />
