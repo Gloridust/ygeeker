@@ -1,4 +1,5 @@
 import themeConfig from "@/theme.config";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { Link } from "nextra-theme-docs";
 import React, { useState, useEffect } from "react";
@@ -52,7 +53,12 @@ export default function Navbar({
 				<div className="flex w-full items-center justify-between px-8 sm:w-fit sm:min-w-[976px]">
 					<div>
 						<Link href="/">
-							<img width={36} src="/logo.svg"></img>
+							<Image
+								alt="Logo"
+								width={36}
+								height={36}
+								src="/logo.svg"
+							></Image>
 						</Link>
 					</div>
 					<div className="hidden sm:flex">

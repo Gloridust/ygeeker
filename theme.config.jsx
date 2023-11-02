@@ -2,6 +2,82 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export default {
+	sitemap: {
+		"en-US": [
+			{
+				title: "Product",
+				links: [
+					{ name: "ClipMemo", href: "/product/clipmemo" },
+					{ name: "I Didn't", href: "#" },
+					{ name: "Ygktool", href: "#" },
+				],
+			},
+			{
+				title: "Entertainment",
+				links: [
+					{ name: "Balloner", href: "#" },
+					{ name: "Oceanion", href: "#" },
+				],
+			},
+			{
+				title: "Support",
+				links: [
+					{ name: "ClipMemo", href: "/product/clipmemo" },
+					{ name: "I Didn't", href: "#" },
+					{ name: "Ygktool", href: "#" },
+				],
+			},
+			{
+				title: "Legal",
+				links: [{ name: "Privacy Policy", href: "/product/clipmemo" }],
+			},
+			{
+				title: "About YGeeker",
+				links: [
+					{ name: "Newsroom", href: "/news" },
+					{ name: "Career Opportunities", href: "/join" },
+					{ name: "About Us", href: "/about" },
+				],
+			},
+		],
+		"zh-CN": [
+			{
+				title: "Product",
+				links: [
+					{ name: "ClipMemo", href: "/product/clipmemo" },
+					{ name: "I Didn't", href: "#" },
+					{ name: "Ygktool", href: "#" },
+				],
+			},
+			{
+				title: "Entertainment",
+				links: [
+					{ name: "Balloner", href: "#" },
+					{ name: "Oceanion", href: "#" },
+				],
+			},
+			{
+				title: "Support",
+				links: [
+					{ name: "ClipMemo", href: "/product/clipmemo" },
+					{ name: "I Didn't", href: "#" },
+					{ name: "Ygktool", href: "#" },
+				],
+			},
+			{
+				title: "Legal",
+				links: [{ name: "Privacy Policy", href: "/product/clipmemo" }],
+			},
+			{
+				title: "About YGeeker",
+				links: [
+					{ name: "Newsroom", href: "/news" },
+					{ name: "Career Opportunities", href: "/join" },
+					{ name: "About Us", href: "/about" },
+				],
+			},
+		],
+	},
 	navbar: {
 		"en-US": {
 			component: Navbar,
@@ -105,17 +181,17 @@ export default {
 				{
 					title: "Sitemap",
 					description: "Explore the full site",
-					color: "bg-orange-600",
-					href: "/join",
+					color: "bg-gray-600",
+					href: "/sitemap",
 					icon: (
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="fill-white"
 							height="24"
 							viewBox="0 -960 960 960"
+							className="fill-white"
 							width="24"
 						>
-							<path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+							<path d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z" />
 						</svg>
 					),
 				},
@@ -183,6 +259,23 @@ export default {
 							width="24"
 						>
 							<path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+						</svg>
+					),
+				},
+				{
+					title: "网站地图",
+					description: "Explore the full site",
+					color: "bg-gray-600",
+					href: "/sitemap",
+					icon: (
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="24"
+							viewBox="0 -960 960 960"
+							className="fill-white"
+							width="24"
+						>
+							<path d="m600-120-240-84-186 72q-20 8-37-4.5T120-170v-560q0-13 7.5-23t20.5-15l212-72 240 84 186-72q20-8 37 4.5t17 33.5v560q0 13-7.5 23T812-192l-212 72Zm-40-98v-468l-160-56v468l160 56Zm80 0 120-40v-474l-120 46v468Zm-440-10 120-46v-468l-120 40v474Zm440-458v468-468Zm-320-56v468-468Z" />
 						</svg>
 					),
 				},
