@@ -3,23 +3,13 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
-const FOOT_LINKS = [
-	{
-		title: "Privacy",
-		href: "/legal/privacy",
-	},
-	{
-		title: "Term of Use",
-		href: "",
-	},
-];
-
-export default function Footer({ actions, text }) {
+export default function Footer({ actions, links, text }) {
 	const { locale } = useRouter();
 
 	if (!!!actions) {
 		actions = themeConfig.footer[locale].actions;
 		text = themeConfig.footer[locale].text;
+		links = themeConfig.footer[locale].links;
 	}
 
 	return (
@@ -60,7 +50,7 @@ export default function Footer({ actions, text }) {
 				<div className="mt-10 flex items-center justify-between space-x-8">
 					<img width={36} src="/logo.svg"></img>
 					<div className="flex items-center space-x-2 text-sm text-gray-500">
-						{FOOT_LINKS.map((link) => (
+						{links.map((link) => (
 							<Link
 								key={link.title}
 								href={link.href}

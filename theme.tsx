@@ -23,16 +23,13 @@ function Layout({ pageOpts, children, ...props }) {
 	const { route, locale } = useRouter();
 
 	if (/\/support\/(.+)/.test(pageOpts.route)) {
-		return (
-			<Documention locale={locale} pageOpts={pageOpts}>
-				{children}
-			</Documention>
-		);
+		return <Documention pageOpts={pageOpts}>{children}</Documention>;
 	}
 
 	switch (pageOpts.route) {
 		case "/about":
 		case "/legal/privacy":
+		case "/legal/terms/sites":
 			return <Article pageOpts={pageOpts}>{children}</Article>;
 		default:
 			return (

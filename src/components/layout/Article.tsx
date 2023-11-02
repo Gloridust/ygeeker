@@ -1,6 +1,3 @@
-import ChapterTree from "@/components/FolderTree";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
 import ArticleMdxProvider from "@/components/Typography/ArticleMdxProvider";
 import themeConfig from "@/theme.config";
 import useMeta from "@/utils/useMeta";
@@ -30,7 +27,7 @@ export default function Article({ children, pageOpts }) {
 							components={{
 								h1: (props) => (
 									<h1
-										className="leading=[1] mb-6 text-[2.8235294118rem] font-semibold"
+										className="leading=[1] mb-6 text-center text-[2.8235294118rem] font-semibold"
 										{...props}
 									/>
 								),
@@ -48,7 +45,7 @@ export default function Article({ children, pageOpts }) {
 								),
 								p: (props) => (
 									<p
-										className="mt-2 leading-[1.52947]  text-slate-700"
+										className="mt-2 leading-[1.52947] text-slate-700"
 										{...props}
 									/>
 								),
@@ -58,9 +55,12 @@ export default function Article({ children, pageOpts }) {
 								),
 								li: (props) => (
 									<li
-										className="list-inside list-disc text-slate-700"
+										className="list-inside list-disc pl-2 text-slate-700"
 										{...props}
 									/>
+								),
+								ul: (props) => (
+									<ul className="py-4" {...props} />
 								),
 								a: (props) => (
 									<a

@@ -103,7 +103,16 @@ export default {
 					),
 				},
 			],
-			links: [],
+			links: [
+				{
+					title: "Privacy",
+					href: "/legal/privacy",
+				},
+				{
+					title: "Term of Use",
+					href: "/legal/terms/sites",
+				},
+			],
 		},
 		"zh-CN": {
 			component: Footer,
@@ -161,7 +170,16 @@ export default {
 					),
 				},
 			],
-			links: [],
+			links: [
+				{
+					title: "Privacy",
+					href: "/legal/privacy",
+				},
+				{
+					title: "Term of Use",
+					href: "/legal/terms/sites",
+				},
+			],
 		},
 	},
 	// ... other theme options
