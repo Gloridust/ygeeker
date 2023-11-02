@@ -189,15 +189,14 @@ export default {
 			],
 			links: [
 				{
-					title: "Privacy",
+					title: "隐私政策",
 					href: "/legal/privacy",
 				},
 				{
-					title: "Term of Use",
+					title: "使用条款",
 					href: "/legal/terms/sites",
 				},
 			],
 		},
 	},
-	// ... other theme options
 };
