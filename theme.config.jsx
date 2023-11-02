@@ -42,7 +42,7 @@ export default {
 		],
 		"zh-CN": [
 			{
-				title: "Product",
+				title: "产品",
 				links: [
 					{ name: "ClipMemo", href: "/product/clipmemo" },
 					{ name: "I Didn't", href: "#" },
@@ -50,14 +50,14 @@ export default {
 				],
 			},
 			{
-				title: "Entertainment",
+				title: "娱乐",
 				links: [
 					{ name: "Balloner", href: "#" },
 					{ name: "Oceanion", href: "#" },
 				],
 			},
 			{
-				title: "Support",
+				title: "支持",
 				links: [
 					{ name: "ClipMemo", href: "/product/clipmemo" },
 					{ name: "I Didn't", href: "#" },
@@ -65,11 +65,11 @@ export default {
 				],
 			},
 			{
-				title: "Legal",
+				title: "法务",
 				links: [{ name: "Privacy Policy", href: "/product/clipmemo" }],
 			},
 			{
-				title: "About YGeeker",
+				title: "关于",
 				links: [
 					{ name: "Newsroom", href: "/news" },
 					{ name: "Career Opportunities", href: "/join" },

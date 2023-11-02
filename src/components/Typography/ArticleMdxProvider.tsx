@@ -28,7 +28,7 @@ export default function ArticleMdxProvider({ children }) {
 				),
 				image: (props) => (
 					// @ts-ignore
-					<img className="mt-[0.75em]" {...props} />
+					<img className="mt-[0.75em] rounded-lg" {...props} />
 				),
 				li: (props) => (
 					<li className="list-inside list-disc" {...props} />

@@ -42,7 +42,7 @@ export default function Documention({ pageOpts, children }) {
 						/>
 					}
 				/>
-				<main className="relative flex min-h-screen justify-center pt-0 sm:pt-[40px]">
+				<main className="relative flex min-h-[50vh] justify-center pt-0 sm:pt-[40px]">
 					<aside
 						className={`fixed bottom-0 top-[50px] z-40 transform bg-white transition-transform duration-300 sm:sticky sm:bottom-[unset] sm:top-[100px] sm:translate-x-0 sm:bg-inherit ${
 							isDrawerOpen
