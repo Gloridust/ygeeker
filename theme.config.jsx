@@ -135,6 +135,7 @@ export default {
 		"en-US": {
 			component: Footer,
 			text: "We are young team found at Chengdu, China. We build amazing stuffs.",
+			copyright: `© ${new Date().getFullYear()} YGeeker Ltd, All Rights Reserved.`,
 			actions: [
 				{
 					title: "About",
@@ -219,6 +220,7 @@ export default {
 		"zh-CN": {
 			component: Footer,
 			text: "我们是设立在成都的创业团队。我们致力于创造美好的东西。",
+			copyright: `© ${new Date().getFullYear()} YGeeker Ltd, 保留所有权利。`,
 			actions: [
 				{
 					title: "关于",

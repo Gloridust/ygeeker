@@ -3,13 +3,15 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
-export default function Footer({ actions, links, text }) {
+export default function Footer({ actions, links, text, copyright, beian }) {
 	const { locale } = useRouter();
 
 	if (!!!actions) {
 		actions = themeConfig.footer[locale].actions;
 		text = themeConfig.footer[locale].text;
 		links = themeConfig.footer[locale].links;
+		copyright = themeConfig.footer[locale].copyright;
+		beian = themeConfig.beian.text;
 	}
 
 	return (
@@ -88,12 +90,10 @@ export default function Footer({ actions, links, text }) {
 							className="hover:underline"
 							href="http://beian.miit.gov.cn/"
 						>
-							京ICP备10214630号
+							{beian}
 						</Link>
 					)}
-					<div className="mt-2 sm:mt-0">
-						Copyright © 2023 YGeeker Ltd, All Rights Reserved
-					</div>
+					<div className="mt-2 sm:mt-0">{copyright}</div>
 				</div>
 			</footer>
 		</section>
