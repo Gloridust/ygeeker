@@ -31,7 +31,10 @@ export default function ArticleMdxProvider({ children }) {
 					<img className="mt-[0.75em] rounded-lg" {...props} />
 				),
 				li: (props) => (
-					<li className="list-inside list-disc" {...props} />
+					<li
+						className="list-inside list-disc pl-2 text-slate-700"
+						{...props}
+					/>
 				),
 				a: (props) => (
 					<a className="text-blue-600 hover:underline" {...props} />
