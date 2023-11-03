@@ -15,8 +15,8 @@ export default {
 			{
 				title: "Entertainment",
 				links: [
-					{ name: "Balloner", href: "#" },
-					{ name: "Oceanion", href: "#" },
+					{ name: "Balloner", href: "/entertainment/balloner" },
+					{ name: "Oceanion", href: "/entertainment/balloner" },
 				],
 			},
 			{
@@ -55,8 +55,8 @@ export default {
 			{
 				title: "娱乐",
 				links: [
-					{ name: "Balloner", href: "/" },
-					{ name: "Oceanion", href: "/" },
+					{ name: "Balloner", href: "/entertaiment/balloner" },
+					{ name: "Oceanion", href: "/entertaiment/balloner" },
 				],
 			},
 			{
