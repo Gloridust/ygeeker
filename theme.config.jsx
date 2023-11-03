@@ -88,13 +88,13 @@ export default {
 		"en-US": {
 			component: Navbar,
 			items: [
-				{
-					name: "Product",
-					route: "/products",
-				},
+				// {
+				// 	name: "Product",
+				// 	route: "/products",
+				// },
 				{
 					name: "News",
-					route: "/blog",
+					route: "/newsroom",
 				},
 				{
 					name: "Account",
@@ -109,13 +109,13 @@ export default {
 		"zh-CN": {
 			component: Navbar,
 			items: [
-				{
-					name: "产品",
-					route: "/products",
-				},
+				// {
+				// 	name: "产品",
+				// 	route: "/products",
+				// },
 				{
 					name: "新闻",
-					route: "/blog",
+					route: "/newsroom",
 				},
 				{
 					name: "账户",
