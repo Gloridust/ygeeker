@@ -14,8 +14,8 @@ export default function Footer({ actions, links, text }) {
 
 	return (
 		<section className="mt-2 flex justify-center">
-			<footer className="max-w-[1200px] p-10">
-				<div className="sm:flex sm:justify-between">
+			<footer className="max-w-[1200px] py-10">
+				<div className="px-8 sm:flex sm:justify-between">
 					<div className="h-full sm:mr-8 md:text-left">
 						<h2 className="mb-4 text-2xl font-bold">YGeeker</h2>
 						<p>{text}</p>
@@ -47,7 +47,7 @@ export default function Footer({ actions, links, text }) {
 						))}
 					</div>
 				</div>
-				<div className="mt-10 flex items-center justify-between space-x-8">
+				<div className="mt-10 flex items-center justify-between space-x-8 px-8">
 					<img width={36} src="/logo.svg"></img>
 					<div className="flex items-center space-x-2 text-sm text-gray-500">
 						{links.map((link) => (
@@ -79,6 +79,20 @@ export default function Footer({ actions, links, text }) {
 								</span>
 							</Link>
 						</div>
+					</div>
+				</div>
+				<div className="mt-4 h-[2px] w-full bg-slate-200"></div>
+				<div className="mt-2 justify-center space-x-4 py-2 text-center text-sm text-gray-500 sm:flex">
+					{locale == "zh-CN" && (
+						<Link
+							className="hover:underline"
+							href="http://beian.miit.gov.cn/"
+						>
+							京ICP备10214630号
+						</Link>
+					)}
+					<div className="mt-2 sm:mt-0">
+						Copyright © 2023 YGeeker Ltd, All Rights Reserved
 					</div>
 				</div>
 			</footer>
