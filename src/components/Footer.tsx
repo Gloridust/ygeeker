@@ -1,4 +1,5 @@
 import themeConfig from "@/theme.config";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -50,7 +51,14 @@ export default function Footer({ actions, links, text, copyright, beian }) {
 					</div>
 				</div>
 				<div className="mt-10 flex items-center justify-between space-x-8 px-8">
-					<img width={36} src="/logo.svg"></img>
+					<Link href="/">
+						<Image
+							alt="logo"
+							height={36}
+							width={36}
+							src="/logo.svg"
+						></Image>
+					</Link>
 					<div className="flex items-center space-x-2 text-sm text-gray-500">
 						{links.map((link) => (
 							<Link
