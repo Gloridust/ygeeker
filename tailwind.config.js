@@ -15,6 +15,9 @@ module.exports = {
 				sans: ["var(--font-noto-sans-display)"],
 				koulen: ["var(--font-koulen)"],
 			},
+			fontWeight: {
+				bold: 700,
+			},
 		},
 	},
 	plugins: [],

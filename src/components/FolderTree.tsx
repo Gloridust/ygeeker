@@ -9,7 +9,25 @@ const ChapterItem = ({ item, meta, handleCloseSidebar }) => {
 	const { route } = useRouter();
 	const toggleOpen = () => setIsOpen(!isOpen);
 
-	const active = route === item.route;
+	// Check if the current item is a folder and if any of its children are active
+	const isActiveFolder = useMemo(() => {
+		if (item.kind === "Folder") {
+			return item.children.some((child) => route.startsWith(child.route));
+		}
+		return false;
+	}, [item, route]);
+
+	// Automatically open the folder if one of its children is active
+	useEffect(() => {
+		if (isActiveFolder) {
+			setIsOpen(true);
+		}
+	}, [isActiveFolder]);
+
+	console.log("Route", route);
+	console.log("Item Route", item.route);
+
+	const active = route.startsWith(item.route);
 
 	const folderMeta = meta[item.name] || item.name;
 
