@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import React from "react";
 
 const sans = Noto_Sans_Display({
-	weight: ["400", "700"],
+	weight: ["400", "600", "700"],
 	subsets: ["latin"],
 	variable: "--font-noto-sans-display",
 	display: "swap",
