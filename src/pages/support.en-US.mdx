@@ -18,22 +18,47 @@ import Link from "next/link";
 		{[
 			{
 				title: "ClipMemo",
-				route: "/support/clipmemo/intro",
 				icon: "/image/product/clipmemo.png",
+				actions:[
+					{
+						title: "Documention",
+						href: "/support/clipmemo/intro"
+					},
+					{
+						title: "Download",
+						href: "/product/clipmemo",
+						icon: <svg className="fill-blue-600" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+					},
+				]
 			},
 			{
 				title: "I Didn't",
-				route: "/support/ididnt/intro",
+				actions:[
+					{
+						title: "Documention",
+						href: "/support/clipmemo/intro"
+					}
+				],
 				icon: "/image/product/ididnt.png",
 			},
 			{
 				title: "YgkTool",
-				route: "/support/ygktool/intro",
+				actions:[
+					{
+						title: "Documention",
+						href: "/support/clipmemo/intro"
+					}
+				],
 				icon: "/image/product/ygktool.png",
 			},
 			{
 				title: "Balloner",
-				route: "/support/balloner/intro",
+				actions:[
+					{
+						title: "Documention",
+						href: "/support/clipmemo/intro"
+					}
+				],
 				icon: "/image/product/balloner.png",
 			},
 			// Add more items here
@@ -49,9 +74,15 @@ import Link from "next/link";
 				<div className="w-full py-4 text-xl">
 					{item.title}
 				</div>
-				<div className="flex space-x-2">
-					<svg className="fill-blue-600" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
-					<Link href={item.route} className="text-blue-600">Documention</Link>
+				<div className="space-y-2">
+				{
+					item.actions.map(action => (
+						<div key={action.title} className="flex space-x-2">
+							{action.icon || <svg className="fill-blue-600" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>}
+							<Link href={action.href} className="text-blue-600 hover:underline">{action.title}</Link>
+						</div>
+					))
+				}
 				</div>
 			</div>
     	))}
