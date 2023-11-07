@@ -33,14 +33,10 @@ export default function Documention({ pageOpts, children }) {
 				description={pageOpts.frontMatter.description}
 			/>
 			<div>
-				<Navbar
-					autoHide={true}
-					subNavbar={
-						<LocalNav
-							title={meta?.title || "Documention"}
-							leadingCallback={() => setDrawerOpen(!isDrawerOpen)}
-						/>
-					}
+				<Navbar autoHide={true} fixed={false} />
+				<LocalNav
+					title={meta?.title || "Documention"}
+					leadingCallback={() => setDrawerOpen(!isDrawerOpen)}
 				/>
 				<main className="relative flex min-h-[50vh] justify-center pt-0 sm:pt-[40px]">
 					<aside

@@ -9,8 +9,10 @@ export default function Navbar({
 	subNavbar,
 	autoHide,
 	navMap,
+	fixed = true,
 }: {
 	subNavbar?: any;
+	fixed?: boolean;
 	autoHide?: boolean;
 	pageMap?: any[];
 	navMap?: any[];
@@ -45,7 +47,9 @@ export default function Navbar({
 	return (
 		<>
 			<div
-				className={`fixed left-0 right-0 top-0 z-50 flex h-[48px] justify-center bg-white backdrop-filter ${
+				className={`${
+					fixed && "fixed"
+				} left-0 right-0 top-0 z-50 flex h-[48px] justify-center bg-white backdrop-filter ${
 					!subNavbar && "shadow-sm"
 				} transition-all duration-300`}
 				style={{ top: navbarTop }}
