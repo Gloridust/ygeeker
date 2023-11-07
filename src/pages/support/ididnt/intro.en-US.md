@@ -3,39 +3,36 @@ title: Introduction
 sidebar_position: 0
 ---
 
-# ClipMemo
+# I Didn't
 
-Welcome to ClipMemo, your go-to app for creating memos based on audio and video clips (from local or online). Here, you'll learn tips and tricks to make ClipMemo an invaluable part of your workflow.
+Welcome to I Didn't. You can leave the bad habits you want to quit in it and clock in on time. Our app will remind and encourage your progress at appropriate times, trying our best to help you quit bad habits.
 
-## Why ClipMemo
+We hope this app can really help you and make you a better person in your mind.
 
-We're living in an era of bite-sized consumption, with video emerging as a dominant medium. Consider the balance between your consumption of videos and text—where does the scale tip?
+## Why Didn't
 
-You can easily find videos on platforms that pique your interest, offering deep dives into subjects you want to explore. But have you found yourself falling into a "bookmark trap"?
+Do you feel guilty because you stay up late often?
 
-Think back to the last video you watched. Maybe it was an intriguing factoid. Do you remember it?
+Do you keep saying you want to quit smoking but can't?
 
-If so, how about the video you watched yesterday? Do you remember that one?
+Have you spent the afternoon watching short videos and found that you haven't started the work you planned in advance?
 
-And if you still do, what about the video you found fascinating a month ago? Can you recall its contents?
+With the increasing stress of modern life, people will need some ways to release stress. Some stress release methods are healthy and acceptable, but some are unhealthy bad habits. These habits may have negative effects on their health, finances, relationships, etc. 
 
-Chances are, you don't.
-
-Research indicates that constant consumption of short videos can affect memory retention. While text-based tools for learning and memory enhancement abound, they often overlook the importance of audio and video. We created ClipMemo to amplify the benefits of video, break the bookmark trap, and stitch fragmented knowledge into a cohesive personal database.
+However, many people find it difficult to overcome these habits by their own strength. Therefore, an app that can help them quit bad habits is in great demand.
 
 ## Our Goal
 
--   Extract knowledge from bite-sized informational videos
--   Serve as a video memo pad, preserving special clips for later reference
--   Aid in language practice by capturing high-quality expressions while watching shows
--   Facilitate video-based education by highlighting key points to share with learners
+-   Record the bad habits you find
+-   Urge you to control the frequency of doing something
+-   Remind and encourage at appropriate times
+-   Record your journey of quitting bad habits
+-   Make you a better person
 
 ## Our Non-goal
 
--   Digest deep, note-intensive videos like Stanford's online courses—we recommend using specialized note-taking software
--   Amplify the benefits of fragmented knowledge: after all, fragmented is still fragmented, and deep understanding in any field requires systematic, long-term study
--   Serve as a simple notepad
--   Perform audio and video editing
+-   Self-deception: It only takes a few clicks to clock in, but whether you really stay away from these bad habits during this period depends on your actual actions.
+-   Prevent reinfection: Maybe you successfully use this app to stay away from some bad habits with your own efforts for a period of time. But you need to note that you also need to supervise yourself not to fall into these bad habits again, because we can't supervise you forever.
 
 ## Community and Support
 
