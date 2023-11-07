@@ -31,10 +31,10 @@ export default function LocalNav({
 				</div>
 
 				<div className="flex text-[.7058823529rem]">
-					<div className="ml-3 px-2 py-1">Contact</div>
-					<div className="ml-3 rounded-full bg-green-700 px-2 py-1 text-white">
+					<button className="ml-3 px-2 py-1">Contact</button>
+					<button className="ml-3 rounded-full bg-green-700 px-2 py-1 text-white">
 						Download
-					</div>
+					</button>
 				</div>
 			</div>
 		</div>
