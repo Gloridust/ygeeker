@@ -56,6 +56,6 @@ sidebar_position: 1
 
 如果你遇到问题，可以联系我们，或者从社区寻求帮助。
 
--   Reddit: https://www.reddit.com/r/ClipMemo/
+-   Reddit: https://www.reddit.com/r/ididnt/
 -   Discord: https://discord.gg/4nGcs632
 -   QQ: 923724755

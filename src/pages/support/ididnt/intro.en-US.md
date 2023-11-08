@@ -52,6 +52,6 @@ However, many people find it difficult to overcome these habits by their own str
 
 If you encounter any issues, you can reach out to us or seek help from the community.
 
--   Reddit: [https://www.reddit.com/r/ClipMemo/](https://www.reddit.com/r/ClipMemo/)
+-   Reddit: [https://www.reddit.com/r/ClipMemo/](https://www.reddit.com/r/ididnt/)
 -   Discord: [https://discord.gg/4nGcs632](https://discord.gg/4nGcs632)
 -   QQ: 923724755
