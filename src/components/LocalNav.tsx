@@ -9,7 +9,7 @@ export default function LocalNav({
 	title: String;
 }) {
 	return (
-		<div className="sticky left-0 top-0 z-50 flex h-[3.0588235294rem] w-full justify-center border-b-2 border-b-slate-200 backdrop-blur-lg backdrop-filter">
+		<div className="sticky left-0 top-0 z-40 flex h-[3.0588235294rem] w-full justify-center border-b-2 border-b-slate-200 backdrop-blur-lg backdrop-filter">
 			<div className="flex w-full items-center justify-between px-8 sm:w-fit sm:min-w-[976px]">
 				<div className="flex">
 					{leadingCallback && (
