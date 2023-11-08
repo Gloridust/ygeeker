@@ -1,6 +1,8 @@
 import Head from "next/head";
 import React from "react";
 
+import GoogleAnalytics from "./GoogleAnalytics";
+
 export default function Meta({
 	title,
 	description = "",
@@ -119,6 +121,12 @@ export default function Meta({
 				type="image/svg+xml"
 				href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512' fill='none'%3E%3Ccircle cx='255.5' cy='255.5' r='243.5' fill='white'/%3E%3Cg clip-path='url(%23clip0_613_34)'%3E%3Cpath d='M264.182 244.66C254.702 221.893 318.03 118.819 349.837 108.005C366.497 102.34 384.948 129.184 390.168 150.997C395.411 172.909 393.11 195.818 378.64 213.513C362.332 233.456 272.808 265.374 264.182 244.66Z' fill='%2363C862'/%3E%3Cpath d='M240.915 249.659C227.159 256.486 192.379 247.725 156.043 233.805C124.037 221.545 85.1148 189.027 84.5953 178.912C83.8072 163.567 106.271 149.635 132.225 144.873C158.295 140.09 188.894 139.121 206.115 153.58C235.309 178.091 266.58 236.921 240.915 249.659Z' fill='%23FFCA3D'/%3E%3Cpath d='M263.863 270.383C288.316 283.193 317.415 405.352 305.189 419.25C294.16 431.788 263.96 424.266 242.915 410.811C221.776 397.297 212.331 374.193 213.776 353.389C216.224 318.119 239.409 257.573 263.863 270.383Z' fill='%234EBFFE'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_613_34'%3E%3Crect width='386' height='386' fill='white' transform='translate(62 62)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E"
 			/>
+
+			{process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+				<GoogleAnalytics
+					ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
+				/>
+			) : null}
 		</Head>
 	);
 }
