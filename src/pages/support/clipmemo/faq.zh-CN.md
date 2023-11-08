@@ -3,20 +3,20 @@ title: FAQ
 sidebar_position: 1
 ---
 
-# Frequently Asked Question
+# 常见问题
 
-## How can I sync data across device?
+## 如何跨设备同步
 
-You can use iCloud to sync data across device.
+您可以使用iCloud服务来实现跨设备同步
 
-Sync without iCloud will be supported in near future.
+其他同步方式将在不久后推出，敬请期待
 
-## The play button in memo library not working?
+## 笔记本中的播放按钮无法正常工作？
 
-If the memo you want to play was created from online media, it make take seconds to buffer the content.
+如果您要播放的笔记是从在线媒体导入的，则需要几秒钟的时间来缓冲内容。
 
-To get a faster and smoother experience, you may want to download them to local first.
+为了获得更快、更流畅的体验，您可能需要先将它们下载到本地。
 
-## Why I cannot transcribe my video / audio?
+## 为什么我无法转录我的视频/音频？
 
-Currently only local file can be transcribed. If you want to transcribe content on YouTube, you may need to download it first.
+目前只能转录本地文件。如果您想转录 YouTube 上的内容，您可能需要先下载这些视频到本地。
