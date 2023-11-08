@@ -13,11 +13,11 @@ Our games provide you with a pure gaming environment - absolutely no ads, no in-
 
 ## How to Play
 
--   In the initial interface, click on the balloon at the bottom of the screen or anywhere around it, and the game will start as the small balloon slowly rises.
+- In the initial interface, click on the balloon at the bottom of the screen or anywhere around it, and the game will start as the small balloon slowly rises.
 
--   In the initial interface, click the small wooden sign in the lower left corner of the screen to set the game background sound and related sound effects.
+- In the initial interface, click the small wooden sign in the lower left corner of the screen to set the game background sound and related sound effects.
 
--   In the game, click the pause symbol in the upper right corner to pause the game, and click again to continue the game.
+- In the game, click the pause symbol in the upper right corner to pause the game, and click again to continue the game.
 
 ## About the game
 
