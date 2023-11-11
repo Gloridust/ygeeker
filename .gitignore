@@ -15,3 +15,5 @@ out
 
 public/rss/feed.xml
 yarn-error.log
+
+.DS_Store
