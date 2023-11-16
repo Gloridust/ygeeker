@@ -51,3 +51,15 @@ ul {
 .float-label {
 	animation: float 5s infinite ease-in-out;
 }
+
+.join_us-bg {
+	background-image: url(/image/green.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.support-bg {
+	background-image: url(/image/blue.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
