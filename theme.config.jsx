@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 
 export default {
 	beian: {
-		text: "京ICP备10214630号",
+		text: "法ICP备0000000号",
 	},
 	sitemap: {
 		"en-US": [
@@ -91,10 +91,10 @@ export default {
 		"en-US": {
 			component: Navbar,
 			items: [
-				// {
-				// 	name: "Product",
-				// 	route: "/products",
-				// },
+				{
+					name: "Shop",
+					route: "/shop",
+				},
 				{
 					name: "News",
 					route: "/newsroom",
@@ -112,10 +112,10 @@ export default {
 		"zh-CN": {
 			component: Navbar,
 			items: [
-				// {
-				// 	name: "产品",
-				// 	route: "/products",
-				// },
+				{
+					name: "商城",
+					route: "/shop",
+				},
 				{
 					name: "新闻",
 					route: "/newsroom",
