@@ -17,10 +17,10 @@ jobs:
             password: ${{ secrets.SSH_PASSWORD }}
             port: ${{ secrets.SSH_PORT || '22' }}
             script: |
-                cd /app/YGeeker-Website
+                cd /home/app/YGeeker_Website
                 rm -rf yarn.lock
                 git pull origin master
                 yarn --production
                 yarn run build
                 kill $(lsof -t -i:3000)
-                pm2 restart 0 || pm2 start yarn --name "YGeeker-Website" -- start
+                pm2 restart 0 || pm2 start yarn --name "ygeeker-website" -- start
