@@ -19,7 +19,7 @@ jobs:
             script: |
                 cd /home/app/YGeeker_Website
                 rm -rf yarn.lock
-                git pull origin master
+                git pull origin main
                 yarn --production
                 yarn run build
                 kill $(lsof -t -i:3000)
