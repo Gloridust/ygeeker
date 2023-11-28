@@ -12,15 +12,7 @@ module.exports = withNextra({
 				defaultLocale: "en-US",
 			},
 			{
-				domain: "www.ygeeker.com",
-				defaultLocale: "en-US",
-			},
-			{
 				domain: "ygeeker.com.cn",
-				defaultLocale: "zh-CN",
-			},
-			{
-				domain: "www.ygeeker.com.cn",
 				defaultLocale: "zh-CN",
 			},
 		],
