@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 
 export default {
 	beian: {
-		text: "法ICP备0000000号",
+		text: "蜀ICP备2023036155号",
 	},
 	sitemap: {
 		"en-US": [
