@@ -8,7 +8,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: env.SSH_HOST && env.SSH_USERNAME && env.SSH_PASSWORD
     steps:
       - name: SSH and deploy node app
         uses: appleboy/ssh-action@master
@@ -19,10 +18,10 @@ jobs:
             port: ${{ secrets.SSH_PORT || '22' }}
             fail_on_stderr: true
             script: |
-                cd /app/YGeeker-Website
+                cd /home/app/YGeeker_Website
                 rm -rf yarn.lock
-                git pull origin master
+                git pull origin main
                 yarn --production
                 yarn run build
                 kill $(lsof -t -i:3000)
-                pm2 restart 0 || pm2 start yarn --name "YGeeker-Website" -- start
+                pm2 restart 0 || pm2 start yarn --name "ygeeker-website" -- start
