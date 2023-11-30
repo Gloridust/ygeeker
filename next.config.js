@@ -6,16 +6,6 @@ module.exports = withNextra({
 	i18n: {
 		locales: ["en-US", "zh-CN"],
 		defaultLocale: "en-US",
-		domains: [
-			{
-				domain: "ygeeker.com",
-				defaultLocale: "en-US",
-			},
-			{
-				domain: "ygeeker.com.cn",
-				defaultLocale: "zh-CN",
-			},
-		],
 	},
 });
 
