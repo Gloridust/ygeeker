@@ -1,0 +1,12 @@
+# robots.txt
+
+# Allow all crawlers access to all content
+User-agent: *
+Disallow: /choose-country-region
+
+# Disallow crawling of specific directories or pages
+# Disallow: /private/
+# Disallow: /hidden-page.html
+
+# Sitemap (optional, but recommended)
+Sitemap: https://www.ygeeker.com/sitemap.xml
