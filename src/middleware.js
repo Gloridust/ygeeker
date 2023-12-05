@@ -1,5 +1,7 @@
 import { withLocales } from "nextra/locales";
 
+// https://nextjs.org/docs/pages/building-your-application/routing/internationalization#leveraging-the-next_locale-cookie
+
 const PUBLIC_FILE = /\.(.*)$/;
 
 export const middleware = withLocales((req) => {
