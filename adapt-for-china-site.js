@@ -9,7 +9,6 @@ const chinaConfig = {
 		locales: ["zh-CN"],
 		defaultLocale: "zh-CN",
 	},
-	ƒ,
 };
 
 const configFileContent = `const withNextra = require("nextra")({
